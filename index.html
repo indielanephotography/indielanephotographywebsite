@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Byron Bay Photographer | Indie Lane Photography by Donna Nugent</title>
+  <meta name="description" content="Indie Lane Photography by Donna Nugent. Branding portraits, commercial and lifestyle photography in natural light across Byron Bay, Northern NSW and the Gold Coast.">
+  <link rel="canonical" href="https://www.indielane.com.au/">
+
+  <meta property="og:title" content="Indie Lane Photography by Donna Nugent">
+  <meta property="og:description" content="Storytelling photography, full of natural light and vibrant colour, across the Byron Bay region and the Gold Coast.">
+  <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=1200w">
+  <meta property="og:url" content="https://www.indielane.com.au/">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Indie Lane Photography",
+    "image": "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG",
+    "description": "Branding, commercial and lifestyle photography in natural light across Byron Bay, Northern NSW and the Gold Coast.",
+    "telephone": "+61400815182",
+    "email": "hello@indielane.com.au",
+    "url": "https://www.indielane.com.au/",
+    "areaServed": ["Byron Bay", "Northern NSW", "Tweed Heads", "Gold Coast", "Victoria"],
+    "founder": "Donna Nugent"
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       INDIE LANE PHOTOGRAPHY
+       Design pattern: Cinematic Luxe, adapted to a warm,
+       natural-light coastal palette so the colour-rich work leads.
+       ============================================================ */
+
+    :root {
+      /* Soft Linen & Pearl palette */
+      --bg: #FBFBFA;              /* Pearl Silk - soft warm white */
+      --bg-alt: #F4F1EC;          /* Oatmeal Cream - alternating sections / cards */
+      --bg-deep: #2B2B2B;         /* Soft Charcoal */
+      --text: #2B2B2B;            /* Soft Charcoal */
+      --text-muted: #6F6B66;      /* muted charcoal */
+      --accent: #B5A89E;          /* Soft Taupe */
+      --accent-deep: #9C8E83;     /* deeper taupe for hover/contrast */
+      --accent-soft: rgba(181, 168, 158, 0.16);
+      --sand: #C2B6AC;            /* light taupe - subtle highlights on dark */
+      --border: rgba(43, 43, 43, 0.12);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    html.lenis, html.lenis body {
+      height: auto;
+    }
+
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+    }
+
+    .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+
+    .lenis.lenis-stopped {
+      overflow: hidden;
+    }
+
+    .lenis.lenis-scrolling iframe {
+      pointer-events: none;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: auto; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 0;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+    @media (min-width: 768px) { .container { padding: 0 48px; } }
+
+    h1, h2, h3, .headline, .sub-headline { text-wrap: balance; word-break: normal; overflow-wrap: normal; }
+
+    /* ===================== HEADER ===================== */
+    header.site {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(251,251,250,0.9); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    header.site nav { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+    @media (max-width: 939px) { header.site nav { justify-content: center; position: relative; } }
+    .logo { display: inline-flex; align-items: center; flex-shrink: 0; }
+    .logo img { height: 48px; width: auto; display: block; }
+    @media (max-width: 600px) { .logo img { height: 44px; } }
+    .nav-links { display: none; align-items: center; gap: 34px; }
+    .nav-links a { font-size: 14px; letter-spacing: 0.04em; font-weight: 400; color: var(--text-muted); transition: color .2s; }
+    .nav-links a:hover { color: var(--accent); }
+    @media (min-width: 940px) { .nav-links { display: flex; } }
+    .btn.nav-cta { display: none; }
+    @media (min-width: 940px) { .btn.nav-cta { display: inline-flex; } }
+
+    /* mobile hamburger toggle */
+    .nav-toggle { display: none; width: 44px; height: 44px; padding: 0; border: none; background: transparent; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
+    .nav-toggle span { display: block; width: 26px; height: 2px; background: var(--text); border-radius: 2px; }
+    @media (max-width: 939px) { .nav-toggle { display: inline-flex; position: absolute; right: 0; top: 50%; transform: translateY(-50%); } }
+
+    /* full-screen glassy mobile nav */
+    .mobile-nav { position: fixed; inset: 0; z-index: 1500; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 24px 48px; overflow-y: auto; background: rgba(251,251,250,0.92); -webkit-backdrop-filter: blur(32px) saturate(160%); backdrop-filter: blur(32px) saturate(160%); opacity: 0; visibility: hidden; transform: scale(1.03); transition: opacity .45s ease, transform .55s cubic-bezier(0.22,1,0.36,1), visibility .45s; }
+    .mobile-nav.open { opacity: 1; visibility: visible; transform: scale(1); }
+    @media (min-width: 940px) { .mobile-nav { display: none; } }
+    .mobile-nav-close { position: absolute; top: 15px; right: 20px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: none; background: transparent; color: var(--text); cursor: pointer; opacity: 0; transition: opacity .3s ease .15s, color .2s ease; }
+    .mobile-nav.open .mobile-nav-close { opacity: 1; }
+    .mobile-nav-close:hover { color: var(--accent); }
+    .mobile-nav-close svg { width: 26px; height: 26px; }
+    .mobile-nav-links { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 100%; }
+    .mobile-nav-links a:not(.btn) { font-family: var(--font-display); font-size: 28px; font-weight: 500; letter-spacing: 0.01em; color: var(--text); padding: 8px 8px; opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s cubic-bezier(0.22,1,0.36,1), color .2s ease; }
+    .mobile-nav-links a:not(.btn):hover { color: var(--accent-deep); }
+    .mobile-nav.open .mobile-nav-links a:not(.btn) { opacity: 1; transform: none; }
+    .mobile-nav.open .mobile-nav-links a:nth-child(1) { transition-delay: .14s; }
+    .mobile-nav.open .mobile-nav-links a:nth-child(2) { transition-delay: .20s; }
+    .mobile-nav.open .mobile-nav-links a:nth-child(3) { transition-delay: .26s; }
+    .mobile-nav.open .mobile-nav-links a:nth-child(4) { transition-delay: .32s; }
+    .mobile-nav.open .mobile-nav-links a:nth-child(5) { transition-delay: .38s; }
+    .mobile-nav.open .mobile-nav-links a:nth-child(6) { transition-delay: .44s; }
+    .mobile-nav-links .btn { margin-top: 22px; opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s cubic-bezier(0.22,1,0.36,1), background .3s ease, border-color .3s ease, box-shadow .3s ease; }
+    .mobile-nav.open .mobile-nav-links .btn { opacity: 1; transform: none; transition-delay: .5s; }
+    .mobile-nav-links .btn.btn-primary { background: var(--bg-deep); border-color: var(--bg-deep); color: #FBFBFA; box-shadow: 0 12px 30px rgba(43,43,43,0.28); }
+    .mobile-nav-links .btn.btn-primary:hover { background: #1a1a1a; border-color: #1a1a1a; }
+    body.menu-open { overflow: hidden; }
+
+    /* ===================== BUTTONS ===================== */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 15px 32px; font-family: var(--font-body); font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; border: 1px solid var(--accent); transition: transform .3s ease, background .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease; border-radius: 2px; will-change: transform; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); box-shadow: 0 10px 26px rgba(43,43,43,0.16); }
+    .btn-outline { background: transparent; color: var(--text); border-color: rgba(43,43,43,0.28); }
+    .btn-outline:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .btn-light { background: transparent; color: #FBFBFA; border-color: rgba(251,251,250,0.5); }
+    .btn-light:hover { background: #FBFBFA; color: var(--bg-deep); }
+
+    /* ===================== HERO ===================== */
+    .hero { position: relative; min-height: calc(100svh - 74px); min-height: calc(100vh - 74px); display: flex; align-items: flex-end; overflow: hidden; }
+    @supports (height: 100svh) { .hero { min-height: calc(100svh - 74px); } }
+    .hero-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: var(--bg-deep); }
+    .hero-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: 0; transform: scale(1.04); filter: saturate(1.03); transition: opacity 1.6s ease-in-out; will-change: opacity, transform; }
+    .hero-slide.is-active { opacity: 1; z-index: 1; animation: heroKenburns 7.5s ease-out forwards; }
+    @keyframes heroKenburns { from { transform: scale(1.04); } to { transform: scale(1.12); } }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-slide { transition: opacity .4s ease; }
+      .hero-slide.is-active { animation: none; transform: none; }
+    }
+    .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, rgba(34,34,34,0.90) 0%, rgba(34,34,34,0.68) 38%, rgba(34,34,34,0.46) 70%, rgba(34,34,34,0.34) 100%); }
+    @media (min-width: 768px) { .hero-overlay { background: linear-gradient(to top, rgba(34,34,34,0.86) 0%, rgba(34,34,34,0.46) 45%, rgba(34,34,34,0.22) 100%), linear-gradient(to right, rgba(34,34,34,0.55) 0%, rgba(34,34,34,0.12) 55%, rgba(34,34,34,0) 100%); } }
+    .hero .container { position: relative; z-index: 2; padding-top: 90px; padding-bottom: 72px; }
+    .hero-content { max-width: 760px; }
+    .hero-eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #E4DDD6; margin-bottom: 22px; opacity: 0; text-shadow: 0 1px 12px rgba(0,0,0,0.45); animation: fadeUp 1s ease-out 0.3s forwards; }
+    .hero h1 { font-family: var(--font-display); font-size: 40px; font-weight: 400; line-height: 1.04; color: #FBFBFA; letter-spacing: -0.01em; margin-bottom: 22px; opacity: 0; text-shadow: 0 2px 28px rgba(0,0,0,0.45); animation: fadeUp 1.2s cubic-bezier(0.22,1,0.36,1) 0.5s forwards; }
+    .hero h1 em { font-style: italic; color: #E9DFD3; }
+    .hero-sub { font-size: 17px; font-weight: 300; line-height: 1.75; color: rgba(250,248,245,0.94); max-width: 540px; margin-bottom: 34px; opacity: 0; text-shadow: 0 1px 16px rgba(0,0,0,0.45); animation: fadeUp 1s ease-out 0.9s forwards; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; opacity: 0; animation: fadeUp 0.9s ease-out 1.2s forwards; }
+    @media (min-width: 768px) { .hero h1 { font-size: 72px; } .hero-eyebrow { font-size: 14px; } }
+    @media (max-width: 767px) {
+      .hero { align-items: center; }
+      .hero .container { padding-top: 90px; padding-bottom: 96px; }
+      .hero-content { text-align: center; margin: 0 auto; }
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-actions { justify-content: center; }
+    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ===================== SECTIONS ===================== */
+    main [id], main section { scroll-margin-top: 88px; }
+    section { padding: 80px 0; }
+    @media (min-width: 768px) { section { padding: 120px 0; } }
+    section.alt { background: var(--bg-alt); }
+    section.deep { background: var(--bg-deep); color: #EDE6DB; }
+
+    .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+    section.deep .eyebrow { color: #B5A89E; }
+    .line { width: 0; height: 1px; background: var(--accent); margin-bottom: 20px; transition: width 1.3s cubic-bezier(0.22,1,0.36,1); }
+    .line.visible { width: 72px; }
+    .section-headline { font-family: var(--font-display); font-size: 32px; font-weight: 400; line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 20px; }
+    @media (min-width: 768px) { .section-headline { font-size: 50px; } }
+    .section-body { font-size: 17px; font-weight: 300; line-height: 1.8; color: var(--text-muted); max-width: 620px; }
+    section.deep .section-body { color: rgba(237,230,219,0.78); }
+    .section-body p + p { margin-top: 1.1em; }
+
+    /* ===================== SPLIT ===================== */
+    .split { display: grid; grid-template-columns: 1fr; gap: 44px; align-items: center; }
+    @media (min-width: 880px) { .split { grid-template-columns: 5fr 5fr; gap: 76px; } .split.reverse .split-text { order: 2; } .split.reverse .split-image { order: 1; } }
+    .split-image { overflow: hidden; }
+    .split-image img { width: 100%; height: 100%; max-height: 640px; object-fit: cover; }
+
+    /* ===================== SERVICES ===================== */
+    .services-grid { display: grid; grid-template-columns: 1fr; gap: 26px; margin-top: 56px; }
+    @media (min-width: 620px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1000px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+    .service-card { background: var(--bg); border: 1px solid var(--border); overflow: hidden; display: flex; flex-direction: column; transition: transform .4s ease, box-shadow .4s ease; }
+    .service-card:hover { transform: translateY(-5px); box-shadow: 0 22px 48px rgba(43,38,32,0.12); }
+    .service-card .card-img { aspect-ratio: 4/3; overflow: hidden; }
+    .service-card .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+    .service-card:hover .card-img img { transform: scale(1.05); }
+    .service-card .card-body { padding: 26px 26px 30px; flex: 1; display: flex; flex-direction: column; }
+    .service-card h3 { font-family: var(--font-display); font-size: 26px; font-weight: 500; line-height: 1.15; margin-bottom: 10px; }
+    .service-card p { font-size: 15px; color: var(--text-muted); line-height: 1.65; flex: 1; }
+    .service-card .card-link { margin-top: 18px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 7px; }
+    .service-card .card-link span { transition: transform .3s; }
+    .service-card:hover .card-link span { transform: translateX(4px); }
+
+    /* ===================== FULL BLEED ===================== */
+    .full-bleed { position: relative; height: 56vh; height: 56svh; min-height: 380px; overflow: hidden; }
+    .full-bleed img { width: 100%; height: 100%; object-fit: cover; }
+    .full-bleed .fb-quote { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; }
+    .full-bleed .fb-overlay { position: absolute; inset: 0; z-index: 1; background: rgba(43,43,43,0.4); }
+    .fb-quote blockquote { font-family: var(--font-display); font-style: italic; font-weight: 300; font-size: 26px; line-height: 1.3; color: #FBFBFA; max-width: 760px; }
+    @media (min-width: 768px) { .fb-quote blockquote { font-size: 40px; } }
+
+    /* ===================== VALUE PROPS ===================== */
+    .values { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 52px; }
+    @media (min-width: 640px) { .values { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1000px) { .values { grid-template-columns: repeat(4, 1fr); } }
+    .value { padding: 30px 26px; border: 1px solid rgba(237,230,219,0.16); }
+    .value .num { font-family: var(--font-display); font-size: 30px; color: #B5A89E; margin-bottom: 12px; }
+    .value h4 { font-size: 16px; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 9px; color: #F3ECE1; }
+    .value p { font-size: 14px; color: rgba(237,230,219,0.7); line-height: 1.6; }
+
+    /* ===================== PORTFOLIO ===================== */
+    .portfolio-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 44px; }
+    .gallery-grid { columns: 1; column-gap: 16px; }
+    @media (min-width: 600px) { .gallery-grid { columns: 2; } }
+    @media (min-width: 1000px) { .gallery-grid { columns: 3; } }
+    .gallery-item { position: relative; break-inside: avoid; margin-bottom: 16px; overflow: hidden; }
+    .gallery-item img { width: 100%; transition: transform .8s ease, filter .4s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    /* ===================== CLIENT GALLERY CALLOUT ===================== */
+    .client-cta { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+    @media (min-width: 880px) { .client-cta { grid-template-columns: 1.1fr 0.9fr; gap: 72px; } }
+
+    /* ===================== TESTIMONIALS ===================== */
+    .tnote { font-size: 12px; color: var(--text-muted); margin-top: 14px; font-style: italic; }
+    .testi-grid { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 52px; }
+    @media (min-width: 820px) { .testi-grid { grid-template-columns: repeat(3, 1fr); } }
+    .testi { background: var(--bg); border: 1px solid var(--border); padding: 34px 30px; }
+    .testi .stars { color: var(--accent); letter-spacing: 3px; margin-bottom: 16px; font-size: 14px; }
+    .testi blockquote { font-family: var(--font-display); font-size: 21px; font-weight: 400; font-style: italic; line-height: 1.4; margin-bottom: 18px; }
+    .testi cite { font-style: normal; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--text-muted); }
+
+    /* ===================== TRUST STATS ===================== */
+    .trust-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 40px; }
+    @media (min-width: 620px) { .trust-stats { grid-template-columns: repeat(4, 1fr); } }
+    .trust-stats .stat-num { font-family: var(--font-display); font-size: 38px; color: var(--accent-deep); line-height: 1; margin-bottom: 8px; }
+    .trust-stats .stat-label { font-size: 13px; color: var(--text-muted); letter-spacing: 0.02em; line-height: 1.4; }
+    .pull-quote { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: 23px; line-height: 1.45; color: var(--text); border-left: 2px solid var(--accent); padding-left: 22px; margin: 28px 0; }
+
+    /* ===================== TIMELINE ===================== */
+    .timeline { position: relative; margin-top: 8px; max-width: 780px; }
+    .timeline::before { content: ''; position: absolute; left: 11px; top: 6px; bottom: 6px; width: 1px; background: rgba(237,230,219,0.2); }
+    .timeline-item { position: relative; padding-left: 46px; margin-bottom: 48px; }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot { position: absolute; left: 0; top: 3px; width: 24px; height: 24px; border-radius: 50%; background: var(--bg-deep); border: 1px solid var(--accent); display: flex; align-items: center; justify-content: center; }
+    .timeline-dot::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .timeline-era { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B5A89E; margin-bottom: 9px; }
+    .timeline-item h4 { font-family: var(--font-display); font-size: 25px; font-weight: 500; color: #F3ECE1; margin-bottom: 9px; }
+    .timeline-item p { font-size: 15px; color: rgba(237,230,219,0.72); max-width: 580px; line-height: 1.7; }
+
+    /* ===================== BRAND STRIP ===================== */
+    .brand-strip-wrap { overflow: hidden; margin-top: 44px; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+    .brand-strip { display: flex; gap: 60px; align-items: center; width: max-content; animation: brandScroll 30s linear infinite; }
+    .brand-strip span { font-family: var(--font-display); font-size: 21px; font-style: italic; font-weight: 500; color: var(--text-muted); white-space: nowrap; opacity: 0.85; }
+    @keyframes brandScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .brand-strip { animation: none; flex-wrap: wrap; width: auto; } }
+
+    /* ===================== CLIENT STORY CARDS ===================== */
+    .story-grid { display: grid; grid-template-columns: 1fr; gap: 28px; margin-top: 52px; }
+    @media (min-width: 900px) { .story-grid { grid-template-columns: repeat(3, 1fr); } }
+    .story-card { background: var(--bg); border: 1px solid var(--border); display: flex; flex-direction: column; transition: transform .4s ease, box-shadow .4s ease; }
+    .story-card:hover { transform: translateY(-5px); box-shadow: 0 22px 48px rgba(43,38,32,0.12); }
+    .story-card .card-img { aspect-ratio: 4/3; overflow: hidden; }
+    .story-card .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+    .story-card:hover .card-img img { transform: scale(1.05); }
+    .story-card .card-body { padding: 28px 26px 30px; flex: 1; display: flex; flex-direction: column; }
+    .story-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-deep); margin-bottom: 12px; }
+    .story-card h4 { font-family: var(--font-display); font-size: 23px; font-weight: 500; margin-bottom: 14px; line-height: 1.2; }
+    .story-block { margin-bottom: 14px; }
+    .story-block:last-child { margin-bottom: 0; }
+    .story-block .sb-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); opacity: 0.7; margin-bottom: 5px; }
+    .story-block p { font-size: 14.5px; line-height: 1.65; color: var(--text-muted); }
+
+    /* ===================== TESTIMONIAL UPGRADES ===================== */
+    .rating-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--bg); border: 1px solid var(--border); padding: 10px 20px; border-radius: 40px; margin-top: 10px; }
+    .rating-badge .stars { color: var(--accent); letter-spacing: 2px; font-size: 14px; }
+    .rating-badge .rb-text { font-size: 13px; color: var(--text-muted); }
+    .testi-head { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+    .testi-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--accent-soft); color: var(--accent-deep); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 16px; font-weight: 600; flex-shrink: 0; }
+    .testi-head-text .stars { color: var(--accent); letter-spacing: 2px; font-size: 13px; }
+    .testi blockquote { margin-bottom: 0; }
+    .testi cite { display: block; margin-top: 18px; }
+    .featured-testi { background: var(--bg-deep); color: #F3ECE1; padding: 46px 40px; margin-top: 22px; display: grid; grid-template-columns: 1fr; gap: 24px; }
+    @media (min-width: 780px) { .featured-testi { grid-template-columns: auto 1fr; align-items: center; gap: 40px; padding: 52px 56px; } }
+    .featured-testi .ft-mark { font-family: var(--font-display); font-size: 64px; line-height: 1; color: var(--accent); font-style: italic; }
+    .featured-testi blockquote { font-family: var(--font-display); font-size: 24px; font-style: italic; font-weight: 400; line-height: 1.5; margin-bottom: 16px; }
+    @media (min-width: 768px) { .featured-testi blockquote { font-size: 28px; } }
+    .featured-testi cite { font-style: normal; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; color: #C9BBA9; }
+
+    /* ===================== FAQ ===================== */
+    .faq-list { margin-top: 48px; max-width: 780px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+    .faq-item summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 24px; font-family: var(--font-display); font-size: 20px; color: var(--text); }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary .plus { font-size: 24px; font-weight: 300; color: var(--accent); transition: transform .3s ease; flex-shrink: 0; }
+    .faq-item[open] summary .plus { transform: rotate(45deg); }
+    .faq-item .faq-a { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-top: 15px; max-width: 640px; }
+
+    /* ===================== BOOKING ===================== */
+    .book-grid { display: grid; grid-template-columns: 1fr; gap: 50px; }
+    @media (min-width: 920px) { .book-grid { grid-template-columns: 1.05fr 0.95fr; gap: 80px; } }
+    .field { margin-bottom: 20px; }
+    .field label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9BBA9; margin-bottom: 9px; }
+    .field input, .field select, .field textarea { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(237,230,219,0.22); color: #F3ECE1; font-family: var(--font-body); font-size: 16px; font-weight: 300; padding: 14px 16px; border-radius: 3px; transition: border-color .2s, background .2s; }
+    .field input::placeholder, .field textarea::placeholder { color: rgba(237,230,219,0.4); }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); background: rgba(255,255,255,0.08); }
+    .field select option { color: #2B2B2B; }
+    .field-row { display: grid; grid-template-columns: 1fr; gap: 0; }
+    @media (min-width: 560px) { .field-row { grid-template-columns: 1fr 1fr; gap: 18px; } }
+    .form-note { font-size: 13px; color: rgba(237,230,219,0.55); margin-top: 6px; }
+    .contact-line { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 22px; }
+    .contact-line .ci { width: 38px; height: 38px; border: 1px solid rgba(237,230,219,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #B5A89E; }
+    .contact-line .ct-label { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #C9BBA9; margin-bottom: 3px; }
+    .contact-line .ct-val { font-size: 17px; color: #F3ECE1; font-weight: 300; }
+
+    /* ===================== FOOTER ===================== */
+    footer.site { background: var(--bg-alt); color: var(--text-muted); padding: 64px 0 40px; border-top: 1px solid var(--border); }
+    .footer-grid { display: grid; grid-template-columns: 1fr; gap: 40px; margin-bottom: 44px; }
+    @media (min-width: 820px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1.2fr; gap: 56px; } }
+    .footer-logo { margin-bottom: 18px; }
+    .footer-logo img { height: 84px; width: auto; display: block; }
+    .footer-col h5 { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 18px; }
+    .footer-col a { display: block; font-size: 15px; color: var(--text-muted); margin-bottom: 11px; transition: color .2s; }
+    .footer-col a:hover { color: var(--accent-deep); }
+    .news-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .news-row input { flex: 1; min-width: 160px; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 12px 14px; border-radius: 3px; font-family: var(--font-body); font-size: 14px; }
+    .news-row input::placeholder { color: var(--text-muted); }
+    .news-row button { background: var(--accent); border: none; color: #fff; padding: 12px 20px; border-radius: 3px; font-weight: 600; font-size: 13px; letter-spacing: 0.05em; cursor: pointer; transition: background .2s; }
+    .news-row button:hover { background: var(--accent-deep); }
+    .socials { display: flex; gap: 12px; margin-top: 8px; }
+    .socials a { width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: all .25s; }
+    .socials a:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .footer-bottom { border-top: 1px solid var(--border); padding-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 13px; color: var(--text-muted); }
+
+    /* ===================== STICKY BAR (mobile) ===================== */
+    .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 95; background: var(--accent); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 14px 24px; transform: translateY(110%) translateZ(0); opacity: 0; transition: transform .4s ease, opacity .4s ease, background .3s; will-change: transform, opacity; }
+    .sticky-bar.visible { transform: translateY(0) translateZ(0); opacity: 1; }
+    .sticky-bar::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 50px; background: inherit; pointer-events: none; }
+    .sticky-bar-inner { display: flex; align-items: center; justify-content: center; gap: 10px; max-width: 1200px; width: 100%; }
+    .sticky-bar svg { width: 18px; height: 18px; color: #fff; flex-shrink: 0; }
+    .sticky-bar-text { font-size: 15px; font-weight: 600; color: #fff; letter-spacing: 0.04em; white-space: nowrap; }
+    @media (min-width: 940px) { .sticky-bar { display: none; } }
+    body { padding-bottom: 52px; }
+    @media (min-width: 940px) { body { padding-bottom: 0; } }
+
+    /* ===================== TOAST ===================== */
+    .toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-16px); z-index: 2500; background: var(--bg-deep); color: #F3ECE1; padding: 12px 22px; border-radius: 8px; font-size: 14px; font-weight: 500; box-shadow: 0 12px 36px rgba(0,0,0,0.25); opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .toast .tk { color: var(--accent); margin-right: 7px; }
+
+    /* ===================== REVEAL ===================== */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 1s ease-out, transform 1s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+      .line { width: 72px; }
+      .hero-eyebrow, .hero h1, .hero-sub, .hero-actions { opacity: 1; }
+      .hero-slide { transform: none; }
+      .hero-slide.is-active { opacity: 1; }
+    }
+
+    /* ============================================================
+       PHOTOGRAPHY PRELOADER (shown while the site loads).
+       Uses the site's own Linen & Pearl palette.
+       ============================================================ */
+    #ilPreloader {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: var(--bg-deep, #2B2B2B);
+      display: none;
+      flex-direction: column; justify-content: center; align-items: center;
+      z-index: 28000;
+      opacity: 1;
+      transition: opacity 0.8s ease;
+    }
+    .il-preloader-inner {
+      display: flex; flex-direction: column; align-items: center; gap: 2rem;
+    }
+
+    /* camera taking a shot: click-punch + flash burst, then turns to reframe, loops */
+    .il-camera-wrap { width: 96px; height: 96px; position: relative; display: flex; align-items: center; justify-content: center; }
+    .il-flash {
+      position: absolute; inset: 0; border-radius: 50%;
+      background: radial-gradient(circle, #fff 0%, rgba(255,255,255,0.4) 55%, rgba(255,255,255,0) 75%);
+      opacity: 0; transform: scale(0.3);
+      animation: ilFlash 2.6s ease-in-out infinite;
+    }
+    .il-camera-icon {
+      position: relative; z-index: 2;
+      font-size: 3.4rem; color: var(--sand, #C2B6AC);
+      transform-origin: 50% 50%;
+      animation: ilCameraShot 2.6s ease-in-out infinite;
+    }
+
+    @keyframes ilFlash {
+      0%, 36% { opacity: 0; transform: scale(0.3); }
+      40% { opacity: 0.95; transform: scale(1.5); }
+      50% { opacity: 0; transform: scale(1.7); }
+      100% { opacity: 0; transform: scale(0.3); }
+    }
+
+    @keyframes ilCameraShot {
+      0%, 33% { transform: rotate(0deg) scale(1); }
+      38% { transform: rotate(0deg) scale(0.9); }
+      44% { transform: rotate(0deg) scale(1); }
+      60% { transform: rotate(-14deg) scale(1); }
+      78% { transform: rotate(-14deg) scale(1); }
+      92%, 100% { transform: rotate(0deg) scale(1); }
+    }
+
+    .il-preloader-logo {
+      width: 124px; height: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.95;
+    }
+
+    .il-status-bar {
+      width: 160px; height: 3px; border-radius: 3px;
+      background: rgba(255,255,255,0.12);
+      overflow: hidden;
+      position: relative;
+    }
+    .il-status-bar::after {
+      content: '';
+      position: absolute; top: 0; left: 0; height: 100%; width: 40%;
+      border-radius: 3px;
+      background: var(--sand, #C2B6AC);
+      animation: ilStatusSlide 1.6s ease-in-out infinite;
+    }
+    @keyframes ilStatusSlide {
+      0% { left: -40%; }
+      100% { left: 100%; }
+    }
+
+    #site-content { opacity: 0; transition: opacity 0.6s ease; }
+    #site-content.gw-visible { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== PHOTOGRAPHY PRELOADER ===================== -->
+  <div id="ilPreloader">
+    <div class="il-preloader-inner">
+      <div class="il-camera-wrap">
+        <span class="il-flash"></span>
+        <i class="fa-solid fa-camera il-camera-icon"></i>
+      </div>
+      <img src="assets/indie-lane-logo.png" alt="" class="il-preloader-logo">
+      <div class="il-status-bar"></div>
+    </div>
+  </div>
+
+  <div id="site-content">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site">
+    <nav class="container">
+      <a href="#top" class="logo" aria-label="Indie Lane Photography, home">
+        <img src="assets/indie-lane-logo.png" alt="Indie Lane Photography" width="750" height="579">
+      </a>
+      <div class="nav-links">
+        <a href="#about">Donna's Story</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#stories">Client Stories</a>
+        <a href="#clients">Client Gallery</a>
+        <a href="#book">Contact</a>
+      </div>
+      <a href="#book" class="btn btn-primary nav-cta" style="padding:12px 24px;">Book a shoot</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== MOBILE NAV (glassy fullscreen) ===================== -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-nav-close" id="navClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="mobile-nav-links">
+      <a href="#about">Donna's Story</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#stories">Client Stories</a>
+      <a href="#clients">Client Gallery</a>
+      <a href="#book">Contact</a>
+      <a href="#book" class="btn btn-primary">Book a shoot</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" style="padding:0;">
+      <div class="hero-bg" id="heroBg">
+        <img class="hero-slide is-active" src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661510748-0WSGN36LKWAJQNA3EQ6P/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-66_All.jpg?format=2000w" alt="Natural light branding portrait by Indie Lane Photography in the Byron Bay region">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Byron Bay &middot; Northern NSW &middot; Gold Coast</p>
+          <h1>Photography that captures the real you, in <em>natural light</em></h1>
+          <p class="hero-sub">Indie Lane is the work of Donna Nugent, a branding, commercial and lifestyle photographer now based in the Byron Bay region. Relaxed sessions, vibrant colour and storytelling images your business and your family will love.</p>
+          <div class="hero-actions">
+            <a href="#book" class="btn btn-primary">Book your shoot</a>
+            <a href="#work" class="btn btn-light">View the portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="container">
+        <div class="split">
+          <div class="split-text">
+            <div class="line"></div>
+            <p class="eyebrow reveal">Who's behind the lens</p>
+            <h2 class="section-headline reveal">I'm Donna. Photography found me on the way to somewhere else.</h2>
+            <div class="section-body reveal">
+              <p>I grew up in country Victoria with a camera I did not yet know what to do with. Photography was not the plan, not at first. I left home to travel the world, and it was somewhere on the road, watching how light changes the way a person holds themselves, that the plan changed.</p>
+              <p>I moved to Melbourne to learn the craft properly, then spent my first chapter photographing weddings, over 200 of them. Two hundred first looks, first dances and in-laws meeting for the first time. That is where I learned how to get a total stranger to relax in front of my camera, usually inside five minutes.</p>
+              <p>A decade ago I put down roots on the Victorian Surf Coast and turned that same eye toward brands, businesses and everyday people, shooting headshots, food, product and documentary work for companies like Ocean Rd Consulting, Conexus Financial and QCE. These days I split my time between the Surf Coast and the Byron Bay region, so wherever you are between Torquay and the Gold Coast, there is a good chance I already know the light.</p>
+            </div>
+            <blockquote class="pull-quote reveal">A photographer's style is simply how they see the world. Mine is warm light, honest colour and people who are actually enjoying themselves.</blockquote>
+            <div style="margin-top:30px;">
+              <a href="#book" class="btn btn-outline">Work with Donna</a>
+            </div>
+          </div>
+          <div class="split-image reveal">
+            <img src="assets/donna-portrait.png" alt="Donna Nugent, photographer and owner of Indie Lane Photography">
+          </div>
+        </div>
+        <div class="trust-stats reveal">
+          <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Weddings &amp; couples photographed before she moved into commercial work</div></div>
+          <div class="stat"><div class="stat-num">10+ yrs</div><div class="stat-label">Full time behind the lens for brands, businesses &amp; families</div></div>
+          <div class="stat"><div class="stat-num">2</div><div class="stat-label">Home bases: the Surf Coast, VIC and the Byron Bay region, NSW</div></div>
+          <div class="stat"><div class="stat-num">0</div><div class="stat-label">Stiff, forced smiles. Ever. That's the whole point.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOURNEY TIMELINE ===================== -->
+    <section id="journey" class="deep">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">The journey so far</p>
+          <h2 class="section-headline reveal">A decade-plus story, told in chapters</h2>
+          <p class="section-body reveal">Credentials on paper are one thing. This is the actual path that got Donna here, chapter by chapter.</p>
+        </div>
+        <div class="timeline reveal" style="margin-top:56px;">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-era">Country Victoria</div>
+            <h4>A camera before a plan</h4>
+            <p>Growing up in country Victoria, Donna nearly always had a camera nearby, though photography as a career was not the plan yet. That came later.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-era">The travel years</div>
+            <h4>Chasing better light</h4>
+            <p>Before settling into any career, Donna left to travel the world. Watching how natural light changed a stranger's face, and how quickly someone relaxed once they felt seen, planted the idea that would not let go.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-era">Melbourne</div>
+            <h4>Learning the craft properly</h4>
+            <p>Donna moved to Melbourne to study photography and start building a body of work worth showing.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-era">The wedding years</div>
+            <h4>200+ weddings, one skill that stuck</h4>
+            <p>Donna's career began in the wedding industry, where she had the honour of photographing over 200 couples on their wedding day. That is where she learned to read a room and get a total stranger to relax in front of her camera, usually within minutes. It is still the foundation of every session she shoots today.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-era">The Surf Coast decade</div>
+            <h4>From weddings to brand storytelling</h4>
+            <p>A decade ago Donna put down roots on the Victorian Surf Coast and pointed that same warmth at branding portraits, food, product and documentary photography, working with businesses including Ocean Rd Consulting, Conexus Financial and QCE.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-era">Now</div>
+            <h4>Byron Bay and beyond</h4>
+            <p>Today Donna splits her time between Torquay, Victoria and the Byron Bay region, NSW, bringing the same relaxed, natural light approach to clients across both coastlines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="alt">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">What I photograph</p>
+          <h2 class="section-headline reveal">Sessions made for your brand and your people</h2>
+          <p class="section-body reveal">Every shoot is relaxed, unhurried and built around what you actually need the images for. Here is where I can help.</p>
+        </div>
+        <!-- TODO: Editorial & Lifestyle and Weddings cards below reuse existing site photos as placeholders; swap in Donna's final selections once received -->
+        <div class="services-grid reveal">
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=900w" alt="Branding portrait session by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Branding Portraits</h3>
+              <p>Headshots and personal brand images that look like you, not a stiff corporate suit. Perfect for your website, LinkedIn and socials.</p>
+              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=900w" alt="Commercial photography for business by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Commercial</h3>
+              <p>Documentary style photography for businesses, schools and councils. People, products and spaces, captured with an artistic eye.</p>
+              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489757515-J2O2G1ISF3EPAXFE0O61/Shaun_Nature+HC_Indie+Lane_LR_25.JPG?format=900w" alt="Editorial and lifestyle photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Editorial &amp; Lifestyle</h3>
+              <p>Storytelling image sets and relaxed lifestyle sessions full of happy faces and real moments, shot outdoors in beautiful natural light.</p>
+              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661562955-X2SREZJ8INNJB3YSY0CC/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-10.jpg?format=900w" alt="Food and product photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Food &amp; Product</h3>
+              <p>Fresh, vibrant images that make your menu and products irresistible, online and in print.</p>
+              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588579515-80X65R9NYIHW3Y1UZOY2/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-24-Edit.jpg?format=900w" alt="Wedding photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Weddings</h3>
+              <p>Relaxed, candid wedding day coverage from someone who has shot over 200 weddings, real moments over stiff posing, in beautiful natural light.</p>
+              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=900w" alt="Events photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Events</h3>
+              <p>Natural, candid coverage that captures the feeling of the day, from launches to celebrations.</p>
+              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FULL BLEED QUOTE ===================== -->
+    <div class="full-bleed">
+      <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661858760-MR5RRQSSV7KJ3ALIATP4/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-15.jpg?format=1800w" alt="Storytelling lifestyle photography by Indie Lane">
+      <div class="fb-overlay"></div>
+      <div class="fb-quote">
+        <blockquote>Storytelling, happy faces, vibrant colours and natural light.<br><cite style="display:block; margin-top:20px; font-style:normal; font-family:var(--font-body); font-size:13px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#E4DDD6;">&mdash; Donna Nugent, Indie Lane Photography</cite></blockquote>
+      </div>
+    </div>
+
+    <!-- ===================== TRUSTED BY ===================== -->
+    <section style="padding:64px 0;">
+      <div class="container">
+        <p class="eyebrow reveal" style="text-align:center;">Brands &amp; businesses Donna has photographed for</p>
+        <div class="brand-strip-wrap reveal">
+          <div class="brand-strip">
+            <span>Ocean Rd Consulting</span>
+            <span>Conexus Financial</span>
+            <span>QCE</span>
+            <span>United by Wool</span>
+            <span>Beachside Trader</span>
+            <span>Takeawei</span>
+            <span>Ocean Rd Consulting</span>
+            <span>Conexus Financial</span>
+            <span>QCE</span>
+            <span>United by Wool</span>
+            <span>Beachside Trader</span>
+            <span>Takeawei</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="work">
+      <div class="container">
+        <div class="portfolio-head">
+          <div>
+            <div class="line"></div>
+            <p class="eyebrow reveal">Portfolio</p>
+            <h2 class="section-headline reveal">A look at recent work</h2>
+          </div>
+          <a href="#book" class="btn btn-outline reveal">Start your shoot</a>
+        </div>
+        <div class="gallery-grid reveal" id="galleryGrid"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ===================== CLIENT STORIES ===================== -->
+    <section id="stories" class="alt">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">Client stories</p>
+          <h2 class="section-headline reveal">What clients actually walk away with</h2>
+          <p class="section-body reveal">Not just pretty pictures. Here is the kind of transformation a session with Donna typically delivers.</p>
+        </div>
+        <div class="story-grid reveal">
+
+          <div class="story-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579490179738-UY7XYD5EXCVAUHAFQSNH/Jess+Nowson_By+Indie+Lane_LR_18.JPG?format=900w" alt="Natural light branding portrait by Indie Lane Photography">
+            </div>
+            <div class="card-body">
+              <div class="story-tag">Branding portraits</div>
+              <h4>From dreading the shoot to using the photos everywhere</h4>
+              <div class="story-block"><div class="sb-label">The challenge</div><p>A business owner who had avoided being on camera for years needed headshots for a new website and LinkedIn.</p></div>
+              <div class="story-block"><div class="sb-label">The approach</div><p>Donna spent the first twenty minutes just talking, no camera in sight, then shot handheld while they worked, never posed stiffly against a plain wall.</p></div>
+              <div class="story-block"><div class="sb-label">The result</div><p>A full image set now used across the website, LinkedIn and socials, with the client saying the photos finally look like them.</p></div>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584773086-8P1XRHMLZGODRXQBB93M/QCE_Lara+Industrial+Shoot_by+Indie+Lane_LR-3.jpg?format=900w" alt="Commercial documentary photography of a workplace by Indie Lane Photography">
+            </div>
+            <div class="card-body">
+              <div class="story-tag">Commercial &amp; documentary</div>
+              <h4>Real people, real workplace, no stock-photo feel</h4>
+              <div class="story-block"><div class="sb-label">The challenge</div><p>A business needed imagery of staff and spaces for reports and web use, wary of anything that looked staged.</p></div>
+              <div class="story-block"><div class="sb-label">The approach</div><p>Donna shot documentary style across a working day, staying in the background so people forgot the camera was there.</p></div>
+              <div class="story-block"><div class="sb-label">The result</div><p>A library of authentic images the business still pulls from for reports, recruitment and its website years later.</p></div>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579149959817-R8CPSV3RVVP9LR29P7PK/Takeawei+Winter+Soup+Bowls_Indie+Lane_HR_78+copy.jpg?format=900w" alt="Vibrant food photography styled flat lay by Indie Lane Photography">
+            </div>
+            <div class="card-body">
+              <div class="story-tag">Food &amp; product</div>
+              <h4>Turning a menu into something people want to eat</h4>
+              <div class="story-block"><div class="sb-label">The challenge</div><p>A cafe needed food photography that felt vibrant and appetite driving, not flat or clinical.</p></div>
+              <div class="story-block"><div class="sb-label">The approach</div><p>Donna shot on location in natural light, styling each dish simply so the real colour and texture led the frame.</p></div>
+              <div class="story-block"><div class="sb-label">The result</div><p>Images used across the menu, packaging and social feed that gave the brand a noticeably more premium feel.</p></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VALUE PROPS ===================== -->
+    <section class="deep">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">Why clients trust Donna</p>
+          <h2 class="section-headline reveal">A decade of experience, a personality you can actually work with</h2>
+          <p class="section-body reveal">This is not a stranger with a camera. It is someone who has spent over ten years learning how to make people, including the ones who hate having their photo taken, look and feel like themselves.</p>
+        </div>
+        <div class="values reveal">
+          <div class="value">
+            <div class="num">01</div>
+            <h4>200+ weddings taught her people, first</h4>
+            <p>Before brand work, Donna spent years photographing weddings, the fastest way to learn how to put a nervous stranger at ease.</p>
+          </div>
+          <div class="value">
+            <div class="num">02</div>
+            <h4>A relaxed, unhurried experience</h4>
+            <p>No rigid posing lists. A calm, friendly approach so even camera shy clients feel comfortable within minutes.</p>
+          </div>
+          <div class="value">
+            <div class="num">03</div>
+            <h4>Real businesses, real results</h4>
+            <p>Trusted by companies like Ocean Rd Consulting, Conexus Financial and QCE for imagery that actually gets used.</p>
+          </div>
+          <div class="value">
+            <div class="num">04</div>
+            <h4>Two coastlines, one eye for light</h4>
+            <p>Based between the Byron Bay region and the Victorian Surf Coast, with the same natural light approach wherever she shoots.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="alt">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">Kind words</p>
+          <h2 class="section-headline reveal">Loved by the people in front of the lens</h2>
+          <div class="rating-badge reveal">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rb-text">Consistently five star feedback from branding, commercial and lifestyle clients</span>
+          </div>
+          <p class="tnote reveal">Sample reviews shown for layout. Donna can swap these for real client quotes any time.</p>
+        </div>
+
+        <div class="featured-testi reveal">
+          <div class="ft-mark">&ldquo;</div>
+          <div>
+            <blockquote>I have avoided cameras my whole life. Donna is the first photographer who made me forget one was even pointed at me. The photos do not look like a "photoshoot," they look like me on a good day.</blockquote>
+            <cite>Long time branding client &middot; Byron Bay region</cite>
+          </div>
+        </div>
+
+        <div class="testi-grid reveal">
+          <div class="testi">
+            <div class="testi-head">
+              <div class="testi-avatar">SM</div>
+              <div class="testi-head-text">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <blockquote>Donna made me feel so at ease. I usually freeze in photos, but these actually look like me.</blockquote>
+            <cite>Sarah M. &middot; Branding client</cite>
+          </div>
+          <div class="testi">
+            <div class="testi-head">
+              <div class="testi-avatar">JT</div>
+              <div class="testi-head-text">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <blockquote>Our team headshots have never looked this good. We are already booking again next year.</blockquote>
+            <cite>James T. &middot; Business owner</cite>
+          </div>
+          <div class="testi">
+            <div class="testi-head">
+              <div class="testi-avatar">KR</div>
+              <div class="testi-head-text">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              </div>
+            </div>
+            <blockquote>Beautiful, vibrant images that captured our brand and our food perfectly.</blockquote>
+            <cite>Kel R. &middot; Cafe owner</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section>
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">Before you book</p>
+          <h2 class="section-headline reveal">Questions people ask before trusting someone with their photos</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>I genuinely hate having my photo taken. Is that a problem?<span class="plus">+</span></summary>
+            <div class="faq-a">Honestly, that describes most of Donna's clients. Years of photographing 200+ weddings taught her how to get a total stranger to relax within minutes, no forced posing, no awkward silences. If you can show up and be willing to have a bit of a laugh, she will handle the rest.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How experienced are you, really?<span class="plus">+</span></summary>
+            <div class="faq-a">Over ten years full time, spanning wedding photography, branding portraits, commercial and documentary work, food and product photography, for individuals and for businesses like Ocean Rd Consulting, Conexus Financial and QCE.</div>
+          </details>
+          <details class="faq-item">
+            <summary>What happens to my photos after the shoot?<span class="plus">+</span></summary>
+            <div class="faq-a">You get a private online gallery to view, download and share your high resolution images from any device, no chasing files over email. See the client gallery section below.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you only shoot in Byron Bay?<span class="plus">+</span></summary>
+            <div class="faq-a">No. Donna is based between the Byron Bay region, NSW and the Surf Coast, VIC, and regularly shoots across Northern NSW, Tweed Heads, the Gold Coast and Victoria.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Will the photos actually look like a "photoshoot"?<span class="plus">+</span></summary>
+            <div class="faq-a">The goal is the opposite. Donna's whole approach is built around natural light, real expressions and minimal posing, so the end result looks like an honest, higher quality version of you, not a stiff studio setup.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLIENT GALLERY CALLOUT ===================== -->
+    <section id="clients">
+      <div class="container">
+        <div class="client-cta">
+          <div>
+            <div class="line"></div>
+            <p class="eyebrow reveal">Existing clients</p>
+            <h2 class="section-headline reveal">Your private gallery, ready when you are</h2>
+            <p class="section-body reveal">Already had a shoot with Indie Lane? Log in to view, download and share your high resolution images any time, from any device.</p>
+            <div style="margin-top:30px;" class="reveal">
+              <a href="#" class="btn btn-primary">Access your gallery</a>
+            </div>
+          </div>
+          <div class="split-image reveal">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584570564-OPB0HLNJJ7MGP5W5RD4F/Claire+Summers_March+2019_by+Indie+Lane_LR-99.jpg?format=1100w" alt="Client viewing their private online photo gallery from Indie Lane" style="max-height:520px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BOOKING ===================== -->
+    <section id="book" class="deep">
+      <div class="container">
+        <div class="book-grid">
+          <div>
+            <div class="line"></div>
+            <p class="eyebrow reveal">Book a shoot</p>
+            <h2 class="section-headline reveal">Let's create your visual story</h2>
+            <p class="section-body reveal" style="margin-bottom:30px;">Tell me a little about what you need and I will get back to you within one business day with availability and pricing.</p>
+
+            <!-- TODO: this is Studio Ninja's default (unstyled) embed look, kept as-is for now. Style tab in Studio Ninja allows theming to match the dark site design later. -->
+            <iframe height="886" style="min-width: 100%; max-width: 1440px; border: 0;" id="sn-form-sumju"
+              src="https://app.studioninja.co/contactform/parser/0a800fc8-6fc8-1b8c-816f-cafdf8a208a5/0a800fc8-6fc8-1b8c-816f-cafdf8cc08a7"
+              allowfullscreen title="Indie Lane Photography enquiry form">
+            </iframe>
+            <script type="text/javascript" data-iframe-id="sn-form-sumju"
+              src="https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js"></script>
+            <p class="form-note">Prefer to talk? Call Donna on 0400 815 182.</p>
+          </div>
+
+          <div>
+            <div class="contact-line">
+              <div class="ci">&#9742;</div>
+              <div><div class="ct-label">Call or text</div><a class="ct-val" href="tel:+61400815182">0400 815 182</a></div>
+            </div>
+            <div class="contact-line">
+              <div class="ci">&#9993;</div>
+              <div><div class="ct-label">Email</div><a class="ct-val" href="mailto:hello@indielane.com.au">hello@indielane.com.au</a></div>
+            </div>
+            <div class="contact-line">
+              <div class="ci">&#9826;</div>
+              <div><div class="ct-label">Servicing</div><div class="ct-val">Byron Bay, Northern NSW, Tweed Heads, Gold Coast, plus Victoria</div></div>
+            </div>
+            <div class="split-image" style="margin-top:30px;">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588672723-NH1KVIHBCE3WWIHNPZ76/Maria_Portraits_Jan%2B2021_by%2BDonna_Indie%2BLane_LR-20.jpg?format=1000w" alt="Portrait photography session with Indie Lane" style="max-height:340px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img src="assets/indie-lane-logo.png" alt="Indie Lane Photography" width="750" height="579"></div>
+          <p style="font-size:15px; line-height:1.7; max-width:340px;">Storytelling photography full of natural light and vibrant colour, by Donna Nugent. Based in the Byron Bay region, shooting across Northern NSW, the Gold Coast and Victoria.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/indielane/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5 0-4.74.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.43 8.5 3.43 8.85 3.43 12s0 3.5.07 4.74c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.07 1.59.07 4.74.07s3.5 0 4.74-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.07-1.24.07-1.59.07-4.74s0-3.5-.07-4.74c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 0 0-.68-1.06 2.85 2.85 0 0 0-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.5 4 15.15 4 12 4zm0 3.07A4.93 4.93 0 1 1 12 16.93 4.93 4.93 0 0 1 12 7.07zm0 1.8a3.13 3.13 0 1 0 0 6.26 3.13 3.13 0 0 0 0-6.26zm5.13-.86a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></a>
+            <a href="https://www.facebook.com/indielanephotography" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.8-.1-1.6-.15-2.4-.15-2.4 0-4.05 1.45-4.05 4.15v2.3H7.5V13h2.7v8h3.3z"/></svg></a>
+            <a href="https://www.linkedin.com/in/donnanugentindielane/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.4 8.4h3.1V21H3.4V8.4zM9.1 8.4h2.97v1.72h.04c.41-.78 1.42-1.6 2.93-1.6 3.13 0 3.71 2.06 3.71 4.74V21h-3.1v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9.1V8.4z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="#about">Donna's story</a>
+          <a href="#journey">The journey</a>
+          <a href="#services">Services</a>
+          <a href="#work">Portfolio</a>
+          <a href="#stories">Client stories</a>
+          <a href="#clients">Client gallery</a>
+          <a href="#book">Book a shoot</a>
+        </div>
+        <div class="footer-col">
+          <h5>Stay in the loop</h5>
+          <p style="font-size:14px; line-height:1.6;">Occasional emails on upcoming workshops and latest work. No spam, ever.</p>
+          <div class="news-row">
+            <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+            <button type="button" onclick="ilToast('Subscribed')">Sign up</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Indie Lane Photography. Donna Nugent.</span>
+        <span>Byron Bay region &middot; Victoria, Australia</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== STICKY BAR ===================== -->
+  <a href="#book" class="sticky-bar" id="stickyBar" aria-label="Book your shoot">
+    <span class="sticky-bar-inner">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      <span class="sticky-bar-text">Book your shoot</span>
+    </span>
+  </a>
+
+  <!-- ===================== TOAST ===================== -->
+  <div class="toast" id="toast"><span class="tk">&#10003;</span><span id="toastMsg"></span></div>
+
+  </div><!-- /#site-content -->
+
+  <!-- Lenis Smooth Scroll CDN -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+  <!-- ===================== PHOTOGRAPHY PRELOADER LOGIC ===================== -->
+  <script>
+  (function(){
+    'use strict';
+    var siteContent = document.getElementById('site-content');
+    var preloader = document.getElementById('ilPreloader');
+
+    function revealSite(){
+      siteContent.classList.add('gw-visible');
+      if(window.initIndieLaneSite) window.initIndieLaneSite();
+    }
+
+    preloader.style.opacity = '1';
+    preloader.style.display = 'flex';
+    setTimeout(function(){
+      preloader.style.opacity = '0';
+      setTimeout(function(){
+        preloader.style.display = 'none';
+        revealSite();
+      }, 800);
+    }, 4000);
+  })();
+  </script>
+
+  <script>
+  window.initIndieLaneSite = function(){
+    'use strict';
+    var toast = document.getElementById('toast');
+    var toastMsg = document.getElementById('toastMsg');
+
+    // ---------- gallery (Donna's real work) ----------
+    var galleryImages = [
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489775343-A8KFNSA8LKNV6R6Z2TPH/Chela+Edmunds_Takeawei_by+Indie+Lane_LR.JPG-85.JPG?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661446257-PJCW90GU122HTGH2DEC1/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-30_All.jpg?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584575330-LLGP0JUCXMHR6SY2X717/Leanne+Rowbottom_May+2019_by+Indie+Lane_LR-137.jpg?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1580879219994-IFVR4R6VZESOX2QE1UJQ/Chela+Edmunds_Takeawei_by+Indie+Lane_LR.JPG-71.JPG?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661860046-UGWNHVDAGGWKW74K9458/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-61.jpg?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694662030490-GPNZCR4U7RUVQS7D3G8F/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-74.jpg?format=800w",
+      "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=800w"
+    ];
+
+    // ---------- toast ----------
+    var toastTimer;
+    function ilToast(msg){
+      toastMsg.textContent = msg || '';
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+    }
+
+    // ---------- render gallery ----------
+    var galleryGrid = document.getElementById('galleryGrid');
+    galleryImages.forEach(function(src, i){
+      var item = document.createElement('div');
+      item.className = 'gallery-item';
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Photography by Indie Lane, gallery image ' + (i+1);
+      img.loading = 'lazy';
+      item.appendChild(img);
+      galleryGrid.appendChild(item);
+    });
+
+    // ---------- hero slideshow (video-style montage of Donna's work) ----------
+    var heroBg = document.getElementById('heroBg');
+    if(heroBg){
+      var HERO_SLIDES = [
+        "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489775343-A8KFNSA8LKNV6R6Z2TPH/Chela+Edmunds_Takeawei_by+Indie+Lane_LR.JPG-85.JPG?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661860046-UGWNHVDAGGWKW74K9458/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-61.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=1500w"
+      ];
+      var slides = [heroBg.querySelector('.hero-slide')];
+      HERO_SLIDES.forEach(function(src){
+        var im = document.createElement('img');
+        im.className = 'hero-slide';
+        im.alt = '';
+        im.setAttribute('aria-hidden', 'true');
+        im.dataset.src = src;
+        heroBg.appendChild(im);
+        slides.push(im);
+      });
+      function preload(i){
+        var s = slides[i % slides.length];
+        if(s && !s.getAttribute('src') && s.dataset.src){ s.src = s.dataset.src; }
+      }
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(slides.length > 1 && !reduce){
+        preload(1);
+        var heroIdx = 0;
+        setInterval(function(){
+          var next = (heroIdx + 1) % slides.length;
+          preload(next);
+          preload(next + 1);
+          slides[heroIdx].classList.remove('is-active');
+          slides[next].classList.add('is-active');
+          heroIdx = next;
+        }, 6000);
+      }
+    }
+
+    // ---------- mobile nav (glassy fullscreen) ----------
+    var navToggle = document.getElementById('navToggle');
+    var mobileNav = document.getElementById('mobileNav');
+    var navClose = document.getElementById('navClose');
+    if(navToggle && mobileNav){
+      function openMenu(){
+        mobileNav.classList.add('open');
+        mobileNav.setAttribute('aria-hidden', 'false');
+        navToggle.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('menu-open');
+        if (typeof lenis !== 'undefined') lenis.stop();
+      }
+      function closeMenu(){
+        mobileNav.classList.remove('open');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+        if (typeof lenis !== 'undefined') lenis.start();
+      }
+      navToggle.addEventListener('click', openMenu);
+      if(navClose) navClose.addEventListener('click', closeMenu);
+      mobileNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && mobileNav.classList.contains('open')) closeMenu();
+      });
+    }
+
+    // ---------- sticky bar ----------
+    var bar = document.getElementById('stickyBar');
+    var threshold = window.innerHeight * 1.2;
+    window.addEventListener('scroll', function(){
+      bar.classList.toggle('visible', window.scrollY > threshold);
+    }, { passive: true });
+
+    // ---------- Lenis Smooth Scroll ----------
+    function quadInOut(t) {
+      return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    }
+
+    var lenis = new Lenis({
+      duration: 1.2,
+      easing: function(t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+      smoothWheel: true,
+      smoothTouch: false
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var href = this.getAttribute('href');
+        if (href === '#') return;
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          var offset = (href === '#top') ? 0 : 74;
+          lenis.scrollTo(target, {
+            offset: -offset,
+            duration: 1.4,
+            easing: quadInOut
+          });
+          if (history.pushState) {
+            history.pushState(null, null, href);
+          } else {
+            location.hash = href;
+          }
+        }
+      });
+    });
+
+    // ---------- reveal on scroll ----------
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal, .line').forEach(function(el){ io.observe(el); });
+
+    // ---------- broken image fallback ----------
+    document.addEventListener('error', function(e){
+      var t = e.target;
+      if(t && t.tagName === 'IMG'){
+        t.style.background = 'linear-gradient(135deg,#D8D0C8,#B5A89E)';
+        t.style.minHeight = '220px';
+      }
+    }, true);
+  };
+  </script>
+
+</body>
+</html>
