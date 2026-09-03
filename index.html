@@ -224,6 +224,25 @@
     .service-card .card-link { margin-top: 18px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 7px; }
     .service-card .card-link span { transition: transform .3s; }
     .service-card:hover .card-link span { transform: translateX(4px); }
+    .card-links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 18px; }
+    .card-links .card-link { margin-top: 0; }
+    .card-gallery-btn { background: none; border: none; padding: 0; cursor: pointer; font-family: inherit; color: var(--accent-deep); }
+
+    /* ===================== SERVICE GALLERY LIGHTBOX ===================== */
+    .gallery-lightbox { position: fixed; inset: 0; z-index: 3000; background: rgba(20,19,18,0.94); display: flex; justify-content: center; padding: 40px 16px; overflow-y: auto; opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s; }
+    .gallery-lightbox.open { opacity: 1; visibility: visible; }
+    .gl-panel { position: relative; width: 100%; max-width: 1100px; height: fit-content; background: var(--bg); border-radius: 4px; padding: 44px 24px 56px; margin: 20px auto; }
+    @media (min-width: 768px) { .gl-panel { padding: 56px 48px 64px; } }
+    .gl-close { position: absolute; top: 12px; right: 14px; width: 40px; height: 40px; border: none; background: transparent; font-size: 30px; line-height: 1; cursor: pointer; color: var(--text-muted); }
+    .gl-close:hover { color: var(--accent-deep); }
+    .gl-head { max-width: 640px; margin-bottom: 32px; }
+    .gl-title { font-family: var(--font-display); font-size: 32px; font-weight: 500; margin-bottom: 10px; }
+    .gl-note { font-size: 13px; color: var(--text-muted); font-style: italic; }
+    .gl-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 600px) { .gl-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 960px) { .gl-grid { grid-template-columns: repeat(3, 1fr); } }
+    .gl-grid img { width: 100%; height: 280px; object-fit: cover; border-radius: 2px; }
+    body.gallery-open { overflow: hidden; }
 
     /* ===================== FULL BLEED ===================== */
     .full-bleed { position: relative; height: 56vh; height: 56svh; min-height: 380px; overflow: hidden; }
@@ -254,6 +273,11 @@
     /* ===================== CLIENT GALLERY CALLOUT ===================== */
     .client-cta { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
     @media (min-width: 880px) { .client-cta { grid-template-columns: 1.1fr 0.9fr; gap: 72px; } }
+    .gallery-collage { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 110px; gap: 10px; }
+    @media (min-width: 640px) { .gallery-collage { grid-auto-rows: 150px; } }
+    .gallery-collage img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+    .gallery-collage img:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+    .gallery-collage img:nth-child(4) { grid-row: span 2; }
 
     /* ===================== TESTIMONIALS ===================== */
     .tnote { font-size: 12px; color: var(--text-muted); margin-top: 14px; font-style: italic; }
@@ -329,6 +353,8 @@
     .faq-item summary .plus { font-size: 24px; font-weight: 300; color: var(--accent); transition: transform .3s ease; flex-shrink: 0; }
     .faq-item[open] summary .plus { transform: rotate(45deg); }
     .faq-item .faq-a { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-top: 15px; max-width: 640px; }
+    .faq-photo-break { margin: 8px 0 28px; overflow: hidden; border-radius: 2px; }
+    .faq-photo-break img { width: 100%; height: 260px; object-fit: cover; }
 
     /* ===================== BOOKING ===================== */
     .book-grid { display: grid; grid-template-columns: 1fr; gap: 50px; }
@@ -346,6 +372,9 @@
     .contact-line .ci { width: 38px; height: 38px; border: 1px solid rgba(237,230,219,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #B5A89E; }
     .contact-line .ct-label { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #C9BBA9; margin-bottom: 3px; }
     .contact-line .ct-val { font-size: 17px; color: #F3ECE1; font-weight: 300; }
+    .book-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .book-photos img { width: 100%; height: 220px; object-fit: cover; border-radius: 2px; }
+    @media (min-width: 560px) { .book-photos img { height: 260px; } }
 
     /* ===================== FOOTER ===================== */
     footer.site { background: var(--bg-alt); color: var(--text-muted); padding: 64px 0 40px; border-top: 1px solid var(--border); }
@@ -494,9 +523,9 @@
         <img src="assets/indie-lane-logo.png" alt="Indie Lane Photography" width="750" height="579">
       </a>
       <div class="nav-links">
-        <a href="#about">Donna's Story</a>
         <a href="#services">Services</a>
         <a href="#work">Work</a>
+        <a href="#about">Donna's Story</a>
         <a href="#stories">Client Stories</a>
         <a href="#clients">Client Gallery</a>
         <a href="#book">Contact</a>
@@ -514,9 +543,9 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <nav class="mobile-nav-links">
-      <a href="#about">Donna's Story</a>
       <a href="#services">Services</a>
       <a href="#work">Work</a>
+      <a href="#about">Donna's Story</a>
       <a href="#stories">Client Stories</a>
       <a href="#clients">Client Gallery</a>
       <a href="#book">Contact</a>
@@ -545,8 +574,155 @@
       </div>
     </section>
 
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="alt">
+      <div class="container">
+        <div style="max-width:680px;">
+          <div class="line"></div>
+          <p class="eyebrow reveal">What I photograph</p>
+          <h2 class="section-headline reveal">Sessions made for your brand and your people</h2>
+          <p class="section-body reveal">Every shoot is relaxed, unhurried and built around what you actually need the images for. Here is where I can help.</p>
+        </div>
+        <!-- TODO: Editorial & Lifestyle and Weddings cards below reuse existing site photos as placeholders; swap in Donna's final selections once received -->
+        <div class="services-grid reveal">
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=900w" alt="Branding portrait session by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Branding Portraits</h3>
+              <p>Headshots and personal brand images that look like you, not a stiff corporate suit. Perfect for your website, LinkedIn and socials.</p>
+              <div class="card-links">
+                <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+                <button type="button" class="card-link card-gallery-btn" data-gallery="branding">View gallery <span>&rsaquo;</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=900w" alt="Commercial photography for business by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Commercial</h3>
+              <p>Documentary style photography for businesses, schools and councils. People, products and spaces, captured with an artistic eye.</p>
+              <div class="card-links">
+                <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+                <button type="button" class="card-link card-gallery-btn" data-gallery="commercial">View gallery <span>&rsaquo;</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489757515-J2O2G1ISF3EPAXFE0O61/Shaun_Nature+HC_Indie+Lane_LR_25.JPG?format=900w" alt="Editorial and lifestyle photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Editorial &amp; Lifestyle</h3>
+              <p>Storytelling image sets and relaxed lifestyle sessions full of happy faces and real moments, shot outdoors in beautiful natural light.</p>
+              <div class="card-links">
+                <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+                <button type="button" class="card-link card-gallery-btn" data-gallery="editorial">View gallery <span>&rsaquo;</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661562955-X2SREZJ8INNJB3YSY0CC/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-10.jpg?format=900w" alt="Food and product photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Food &amp; Product</h3>
+              <p>Fresh, vibrant images that make your menu and products irresistible, online and in print.</p>
+              <div class="card-links">
+                <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+                <button type="button" class="card-link card-gallery-btn" data-gallery="food">View gallery <span>&rsaquo;</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588579515-80X65R9NYIHW3Y1UZOY2/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-24-Edit.jpg?format=900w" alt="Wedding photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Weddings</h3>
+              <p>Relaxed, candid wedding day coverage from someone who has shot over 200 weddings, real moments over stiff posing, in beautiful natural light.</p>
+              <div class="card-links">
+                <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+                <button type="button" class="card-link card-gallery-btn" data-gallery="weddings">View gallery <span>&rsaquo;</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=900w" alt="Events photography by Indie Lane">
+            </div>
+            <div class="card-body">
+              <h3>Events</h3>
+              <p>Natural, candid coverage that captures the feeling of the day, from launches to celebrations.</p>
+              <div class="card-links">
+                <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
+                <button type="button" class="card-link card-gallery-btn" data-gallery="events">View gallery <span>&rsaquo;</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FULL BLEED QUOTE ===================== -->
+    <div class="full-bleed">
+      <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584575330-LLGP0JUCXMHR6SY2X717/Leanne+Rowbottom_May+2019_by+Indie+Lane_LR-137.jpg?format=1800w" alt="Storytelling lifestyle photography by Indie Lane">
+      <div class="fb-overlay"></div>
+      <div class="fb-quote">
+        <blockquote>Storytelling, happy faces, vibrant colours and natural light.<br><cite style="display:block; margin-top:20px; font-style:normal; font-family:var(--font-body); font-size:13px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#E4DDD6;">&mdash; Donna Nugent, Indie Lane Photography</cite></blockquote>
+      </div>
+    </div>
+
+    <!-- ===================== TRUSTED BY ===================== -->
+    <section style="padding:64px 0;">
+      <div class="container">
+        <p class="eyebrow reveal" style="text-align:center;">Brands &amp; businesses Donna has photographed for</p>
+        <div class="brand-strip-wrap reveal">
+          <div class="brand-strip">
+            <span>Ocean Rd Consulting</span>
+            <span>Conexus Financial</span>
+            <span>QCE</span>
+            <span>United by Wool</span>
+            <span>Beachside Trader</span>
+            <span>Takeawei</span>
+            <span>Ocean Rd Consulting</span>
+            <span>Conexus Financial</span>
+            <span>QCE</span>
+            <span>United by Wool</span>
+            <span>Beachside Trader</span>
+            <span>Takeawei</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="work">
+      <div class="container">
+        <div class="portfolio-head">
+          <div>
+            <div class="line"></div>
+            <p class="eyebrow reveal">Portfolio</p>
+            <h2 class="section-headline reveal">A look at recent work</h2>
+          </div>
+          <a href="#book" class="btn btn-outline reveal">Start your shoot</a>
+        </div>
+        <div class="gallery-grid reveal" id="galleryGrid"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
     <!-- ===================== ABOUT ===================== -->
-    <section id="about">
+    <section id="about" class="alt">
       <div class="container">
         <div class="split">
           <div class="split-text">
@@ -623,135 +799,6 @@
             <p>Today Donna splits her time between Torquay, Victoria and the Byron Bay region, NSW, bringing the same relaxed, natural light approach to clients across both coastlines.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ===================== SERVICES ===================== -->
-    <section id="services" class="alt">
-      <div class="container">
-        <div style="max-width:680px;">
-          <div class="line"></div>
-          <p class="eyebrow reveal">What I photograph</p>
-          <h2 class="section-headline reveal">Sessions made for your brand and your people</h2>
-          <p class="section-body reveal">Every shoot is relaxed, unhurried and built around what you actually need the images for. Here is where I can help.</p>
-        </div>
-        <!-- TODO: Editorial & Lifestyle and Weddings cards below reuse existing site photos as placeholders; swap in Donna's final selections once received -->
-        <div class="services-grid reveal">
-
-          <div class="service-card">
-            <div class="card-img">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=900w" alt="Branding portrait session by Indie Lane">
-            </div>
-            <div class="card-body">
-              <h3>Branding Portraits</h3>
-              <p>Headshots and personal brand images that look like you, not a stiff corporate suit. Perfect for your website, LinkedIn and socials.</p>
-              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <div class="card-img">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=900w" alt="Commercial photography for business by Indie Lane">
-            </div>
-            <div class="card-body">
-              <h3>Commercial</h3>
-              <p>Documentary style photography for businesses, schools and councils. People, products and spaces, captured with an artistic eye.</p>
-              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <div class="card-img">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489757515-J2O2G1ISF3EPAXFE0O61/Shaun_Nature+HC_Indie+Lane_LR_25.JPG?format=900w" alt="Editorial and lifestyle photography by Indie Lane">
-            </div>
-            <div class="card-body">
-              <h3>Editorial &amp; Lifestyle</h3>
-              <p>Storytelling image sets and relaxed lifestyle sessions full of happy faces and real moments, shot outdoors in beautiful natural light.</p>
-              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <div class="card-img">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661562955-X2SREZJ8INNJB3YSY0CC/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-10.jpg?format=900w" alt="Food and product photography by Indie Lane">
-            </div>
-            <div class="card-body">
-              <h3>Food &amp; Product</h3>
-              <p>Fresh, vibrant images that make your menu and products irresistible, online and in print.</p>
-              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <div class="card-img">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588579515-80X65R9NYIHW3Y1UZOY2/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-24-Edit.jpg?format=900w" alt="Wedding photography by Indie Lane">
-            </div>
-            <div class="card-body">
-              <h3>Weddings</h3>
-              <p>Relaxed, candid wedding day coverage from someone who has shot over 200 weddings, real moments over stiff posing, in beautiful natural light.</p>
-              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
-            </div>
-          </div>
-
-          <div class="service-card">
-            <div class="card-img">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=900w" alt="Events photography by Indie Lane">
-            </div>
-            <div class="card-body">
-              <h3>Events</h3>
-              <p>Natural, candid coverage that captures the feeling of the day, from launches to celebrations.</p>
-              <a href="#book" class="card-link">Enquire <span>&rsaquo;</span></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FULL BLEED QUOTE ===================== -->
-    <div class="full-bleed">
-      <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661858760-MR5RRQSSV7KJ3ALIATP4/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-15.jpg?format=1800w" alt="Storytelling lifestyle photography by Indie Lane">
-      <div class="fb-overlay"></div>
-      <div class="fb-quote">
-        <blockquote>Storytelling, happy faces, vibrant colours and natural light.<br><cite style="display:block; margin-top:20px; font-style:normal; font-family:var(--font-body); font-size:13px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#E4DDD6;">&mdash; Donna Nugent, Indie Lane Photography</cite></blockquote>
-      </div>
-    </div>
-
-    <!-- ===================== TRUSTED BY ===================== -->
-    <section style="padding:64px 0;">
-      <div class="container">
-        <p class="eyebrow reveal" style="text-align:center;">Brands &amp; businesses Donna has photographed for</p>
-        <div class="brand-strip-wrap reveal">
-          <div class="brand-strip">
-            <span>Ocean Rd Consulting</span>
-            <span>Conexus Financial</span>
-            <span>QCE</span>
-            <span>United by Wool</span>
-            <span>Beachside Trader</span>
-            <span>Takeawei</span>
-            <span>Ocean Rd Consulting</span>
-            <span>Conexus Financial</span>
-            <span>QCE</span>
-            <span>United by Wool</span>
-            <span>Beachside Trader</span>
-            <span>Takeawei</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PORTFOLIO ===================== -->
-    <section id="work">
-      <div class="container">
-        <div class="portfolio-head">
-          <div>
-            <div class="line"></div>
-            <p class="eyebrow reveal">Portfolio</p>
-            <h2 class="section-headline reveal">A look at recent work</h2>
-          </div>
-          <a href="#book" class="btn btn-outline reveal">Start your shoot</a>
-        </div>
-        <div class="gallery-grid reveal" id="galleryGrid"><!-- rendered by JS --></div>
       </div>
     </section>
 
@@ -921,6 +968,9 @@
             <summary>What happens to my photos after the shoot?<span class="plus">+</span></summary>
             <div class="faq-a">You get a private online gallery to view, download and share your high resolution images from any device, no chasing files over email. See the client gallery section below.</div>
           </details>
+          <div class="faq-photo-break reveal">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=1400w" alt="Natural light lifestyle photography by Indie Lane, breaking up the FAQ section" loading="lazy">
+          </div>
           <details class="faq-item">
             <summary>Do you only shoot in Byron Bay?<span class="plus">+</span></summary>
             <div class="faq-a">No. Donna is based between the Byron Bay region, NSW and the Surf Coast, VIC, and regularly shoots across Northern NSW, Tweed Heads, the Gold Coast and Victoria.</div>
@@ -946,8 +996,13 @@
               <a href="#" class="btn btn-primary">Access your gallery</a>
             </div>
           </div>
-          <div class="split-image reveal">
-            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584570564-OPB0HLNJJ7MGP5W5RD4F/Claire+Summers_March+2019_by+Indie+Lane_LR-99.jpg?format=1100w" alt="Client viewing their private online photo gallery from Indie Lane" style="max-height:520px;">
+          <div class="gallery-collage reveal">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=800w" alt="Sample photo from a client's private gallery, commercial session">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588579515-80X65R9NYIHW3Y1UZOY2/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-24-Edit.jpg?format=800w" alt="Sample photo from a client's private gallery, wedding session">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579149959817-R8CPSV3RVVP9LR29P7PK/Takeawei+Winter+Soup+Bowls_Indie+Lane_HR_78+copy.jpg?format=800w" alt="Sample photo from a client's private gallery, food session">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=800w" alt="Sample photo from a client's private gallery, branding session">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584773086-8P1XRHMLZGODRXQBB93M/QCE_Lara+Industrial+Shoot_by+Indie+Lane_LR-3.jpg?format=800w" alt="Sample photo from a client's private gallery, commercial session">
+            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=800w" alt="Sample photo from a client's private gallery, event session">
           </div>
         </div>
       </div>
@@ -986,8 +1041,9 @@
               <div class="ci">&#9826;</div>
               <div><div class="ct-label">Servicing</div><div class="ct-val">Byron Bay, Northern NSW, Tweed Heads, Gold Coast, plus Victoria</div></div>
             </div>
-            <div class="split-image" style="margin-top:30px;">
-              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588672723-NH1KVIHBCE3WWIHNPZ76/Maria_Portraits_Jan%2B2021_by%2BDonna_Indie%2BLane_LR-20.jpg?format=1000w" alt="Portrait photography session with Indie Lane" style="max-height:340px;">
+            <div class="book-photos" style="margin-top:30px;">
+              <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588672723-NH1KVIHBCE3WWIHNPZ76/Maria_Portraits_Jan%2B2021_by%2BDonna_Indie%2BLane_LR-20.jpg?format=1000w" alt="Portrait photography session with Indie Lane">
+              <img src="assets/donna-portrait.png" alt="Donna Nugent, photographer behind Indie Lane Photography">
             </div>
           </div>
         </div>
@@ -1011,10 +1067,10 @@
         </div>
         <div class="footer-col">
           <h5>Explore</h5>
-          <a href="#about">Donna's story</a>
-          <a href="#journey">The journey</a>
           <a href="#services">Services</a>
           <a href="#work">Portfolio</a>
+          <a href="#about">Donna's story</a>
+          <a href="#journey">The journey</a>
           <a href="#stories">Client stories</a>
           <a href="#clients">Client gallery</a>
           <a href="#book">Book a shoot</a>
@@ -1042,6 +1098,19 @@
       <span class="sticky-bar-text">Book your shoot</span>
     </span>
   </a>
+
+  <!-- ===================== SERVICE GALLERY LIGHTBOX ===================== -->
+  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+    <div class="gl-panel">
+      <button class="gl-close" id="glClose" aria-label="Close gallery">&times;</button>
+      <div class="gl-head">
+        <p class="eyebrow" id="glEyebrow">Gallery</p>
+        <h3 class="gl-title" id="glTitle"></h3>
+        <p class="gl-note">Sample images shown for layout &mdash; Donna's final curated selects for this category will replace these.</p>
+      </div>
+      <div class="gl-grid" id="glGrid"></div>
+    </div>
+  </div>
 
   <!-- ===================== TOAST ===================== -->
   <div class="toast" id="toast"><span class="tk">&#10003;</span><span id="toastMsg"></span></div>
@@ -1114,6 +1183,108 @@
       img.loading = 'lazy';
       item.appendChild(img);
       galleryGrid.appendChild(item);
+    });
+
+    // ---------- service category lightbox galleries ----------
+    // Placeholder image sets per category, reused from Donna's existing shots.
+    // Swap each array for Donna's final curated top 20-30 selects per category once received.
+    var serviceGalleries = {
+      branding: {
+        title: 'Branding Portraits',
+        images: [
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589956102242-3IG4BG01IZC2IF3W8DDC/Rowena+Martinich_Aug+2018_Indie+Lane_LR_15.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579490179738-UY7XYD5EXCVAUHAFQSNH/Jess+Nowson_By+Indie+Lane_LR_18.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584575330-LLGP0JUCXMHR6SY2X717/Leanne+Rowbottom_May+2019_by+Indie+Lane_LR-137.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584570564-OPB0HLNJJ7MGP5W5RD4F/Claire+Summers_March+2019_by+Indie+Lane_LR-99.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588672723-NH1KVIHBCE3WWIHNPZ76/Maria_Portraits_Jan%2B2021_by%2BDonna_Indie%2BLane_LR-20.jpg?format=900w"
+        ]
+      },
+      commercial: {
+        title: 'Commercial',
+        images: [
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584773086-8P1XRHMLZGODRXQBB93M/QCE_Lara+Industrial+Shoot_by+Indie+Lane_LR-3.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489757515-J2O2G1ISF3EPAXFE0O61/Shaun_Nature+HC_Indie+Lane_LR_25.JPG?format=900w"
+        ]
+      },
+      editorial: {
+        title: 'Editorial & Lifestyle',
+        images: [
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489757515-J2O2G1ISF3EPAXFE0O61/Shaun_Nature+HC_Indie+Lane_LR_25.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661858760-MR5RRQSSV7KJ3ALIATP4/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-15.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661510748-0WSGN36LKWAJQNA3EQ6P/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-66_All.jpg?format=900w"
+        ]
+      },
+      food: {
+        title: 'Food & Product',
+        images: [
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661562955-X2SREZJ8INNJB3YSY0CC/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-10.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661860046-UGWNHVDAGGWKW74K9458/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-61.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694662030490-GPNZCR4U7RUVQS7D3G8F/Manuko_Torquay_June+2023_by+Donna_Indie+Lane_LR-74.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579149959817-R8CPSV3RVVP9LR29P7PK/Takeawei+Winter+Soup+Bowls_Indie+Lane_HR_78+copy.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489775343-A8KFNSA8LKNV6R6Z2TPH/Chela+Edmunds_Takeawei_by+Indie+Lane_LR.JPG-85.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1580879219994-IFVR4R6VZESOX2QE1UJQ/Chela+Edmunds_Takeawei_by+Indie+Lane_LR.JPG-71.JPG?format=900w"
+        ]
+      },
+      weddings: {
+        title: 'Weddings',
+        images: [
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694588579515-80X65R9NYIHW3Y1UZOY2/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-24-Edit.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661446257-PJCW90GU122HTGH2DEC1/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-30_All.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1694661510748-0WSGN36LKWAJQNA3EQ6P/Nikki_Soul+Potter_June+2023_by+Donna_Indie+Lane_LR-66_All.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=900w"
+        ]
+      },
+      events: {
+        title: 'Events',
+        images: [
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584574076-WE61NTS9O6AHTSYCFYTI/Jo+Surkitt_June+2018_Indie+Lane_HR_64.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579489775343-A8KFNSA8LKNV6R6Z2TPH/Chela+Edmunds_Takeawei_by+Indie+Lane_LR.JPG-85.JPG?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584773086-8P1XRHMLZGODRXQBB93M/QCE_Lara+Industrial+Shoot_by+Indie+Lane_LR-3.jpg?format=900w",
+          "https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1589955861954-VUA28FI6S1VS24SBJQKI/GLC_Newtown_Feb+2019_by+Indie+Lane_LR-45.jpg?format=900w"
+        ]
+      }
+    };
+
+    var galleryLightbox = document.getElementById('galleryLightbox');
+    var glTitle = document.getElementById('glTitle');
+    var glGrid = document.getElementById('glGrid');
+    var glClose = document.getElementById('glClose');
+
+    function openServiceGallery(key){
+      var data = serviceGalleries[key];
+      if(!data || !galleryLightbox) return;
+      glTitle.textContent = data.title;
+      glGrid.innerHTML = '';
+      data.images.forEach(function(src, i){
+        var img = document.createElement('img');
+        img.src = src;
+        img.loading = 'lazy';
+        img.alt = data.title + ' photography by Indie Lane, sample ' + (i + 1);
+        glGrid.appendChild(img);
+      });
+      galleryLightbox.classList.add('open');
+      galleryLightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('gallery-open');
+      if (typeof lenis !== 'undefined') lenis.stop();
+    }
+    function closeServiceGallery(){
+      galleryLightbox.classList.remove('open');
+      galleryLightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('gallery-open');
+      if (typeof lenis !== 'undefined') lenis.start();
+    }
+    document.querySelectorAll('.card-gallery-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ openServiceGallery(btn.dataset.gallery); });
+    });
+    if(glClose) glClose.addEventListener('click', closeServiceGallery);
+    if(galleryLightbox){
+      galleryLightbox.addEventListener('click', function(e){ if(e.target === galleryLightbox) closeServiceGallery(); });
+    }
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && galleryLightbox && galleryLightbox.classList.contains('open')) closeServiceGallery();
     });
 
     // ---------- hero slideshow (video-style montage of Donna's work) ----------
