@@ -246,7 +246,9 @@
 
     /* ===================== FULL BLEED ===================== */
     .full-bleed { position: relative; height: 56vh; height: 56svh; min-height: 380px; overflow: hidden; }
-    .full-bleed img { width: 100%; height: 100%; object-fit: cover; }
+    .full-bleed img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    @media (min-width: 768px) { .full-bleed.quote-break img { object-position: center 12%; } }
+    .full-bleed.faq-break { height: 40vh; height: 40svh; min-height: 260px; }
     .full-bleed .fb-quote { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; }
     .full-bleed .fb-overlay { position: absolute; inset: 0; z-index: 1; background: rgba(43,43,43,0.4); }
     .fb-quote blockquote { font-family: var(--font-display); font-style: italic; font-weight: 300; font-size: 26px; line-height: 1.3; color: #FBFBFA; max-width: 760px; }
@@ -353,8 +355,6 @@
     .faq-item summary .plus { font-size: 24px; font-weight: 300; color: var(--accent); transition: transform .3s ease; flex-shrink: 0; }
     .faq-item[open] summary .plus { transform: rotate(45deg); }
     .faq-item .faq-a { font-size: 15px; color: var(--text-muted); line-height: 1.75; margin-top: 15px; max-width: 640px; }
-    .faq-photo-break { margin: 8px 0 28px; overflow: hidden; border-radius: 2px; }
-    .faq-photo-break img { width: 100%; height: 260px; object-fit: cover; }
 
     /* ===================== BOOKING ===================== */
     .book-grid { display: grid; grid-template-columns: 1fr; gap: 50px; }
@@ -675,7 +675,7 @@
     </section>
 
     <!-- ===================== FULL BLEED QUOTE ===================== -->
-    <div class="full-bleed">
+    <div class="full-bleed quote-break">
       <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579584575330-LLGP0JUCXMHR6SY2X717/Leanne+Rowbottom_May+2019_by+Indie+Lane_LR-137.jpg?format=1800w" alt="Storytelling lifestyle photography by Indie Lane">
       <div class="fb-overlay"></div>
       <div class="fb-quote">
@@ -947,6 +947,11 @@
       </div>
     </section>
 
+    <!-- ===================== PHOTO BREAK (before FAQ) ===================== -->
+    <div class="full-bleed faq-break">
+      <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=1800w" alt="Natural light lifestyle photography by Indie Lane">
+    </div>
+
     <!-- ===================== FAQ ===================== -->
     <section>
       <div class="container">
@@ -968,9 +973,6 @@
             <summary>What happens to my photos after the shoot?<span class="plus">+</span></summary>
             <div class="faq-a">You get a private online gallery to view, download and share your high resolution images from any device, no chasing files over email. See the client gallery section below.</div>
           </details>
-          <div class="faq-photo-break reveal">
-            <img src="https://images.squarespace-cdn.com/content/v1/5de9b2b9fb7f953b5154014b/1579659540411-5F9UHKKPTUJSBC0T76QZ/Lauren+Barton_Indie+Lane_LR_33.JPG?format=1400w" alt="Natural light lifestyle photography by Indie Lane, breaking up the FAQ section" loading="lazy">
-          </div>
           <details class="faq-item">
             <summary>Do you only shoot in Byron Bay?<span class="plus">+</span></summary>
             <div class="faq-a">No. Donna is based between the Byron Bay region, NSW and the Surf Coast, VIC, and regularly shoots across Northern NSW, Tweed Heads, the Gold Coast and Victoria.</div>
@@ -1100,7 +1102,7 @@
   </a>
 
   <!-- ===================== SERVICE GALLERY LIGHTBOX ===================== -->
-  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true" data-lenis-prevent>
     <div class="gl-panel">
       <button class="gl-close" id="glClose" aria-label="Close gallery">&times;</button>
       <div class="gl-head">
