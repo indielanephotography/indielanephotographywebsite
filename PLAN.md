@@ -144,4 +144,10 @@ No further code changes needed on our side once this is set — the same embed s
 
 **Decision:** CoWork downloads the 6 zips to Chrome's download folder (no computer linking needed). Claude Code unzips, flattens and sorts them into `_incoming/<slug>/`, checks resolution and watermarks, then runs the build. Prompt: [cowork/2026-10-21-shootproof-download-zips.md](cowork/2026-10-21-shootproof-download-zips.md).
 
-**Status:** the 2026-10-20 commit is still local only (not pushed). The reply to Donna has **not been sent yet**. Plan: send it once her real photos are live, with the link.
+**Download round 1 (later on 2026-10-21):** CoWork clicked download on all 6 albums. Only 3 zips reached `C:\Users\antho\Downloads\`: _Commercial (60), _Editorial__Lifestyle (51), _Weddings (46). Branding, Events and Food & Products are missing, most likely blocked by Chrome's "multiple automatic downloads" guard. ShootProof offered no size choice ("My Device" only).
+- Anthony unzipped the 3 into `assets/`. Claude Code moved them to `_incoming/<slug>/` (originals must never be committed: 390 MB).
+- Quality check: all are Donna's "LR" exports at **2400px long edge**, sRGB, **no watermarks** (contact sheets plus a full-size spot check). **Exception: 8 wedding photos are low-res**: LR-1, LR-11, LR-12 (864px), LR-20, LR-21, LR-22, LR-23 (about 1008px), LR-24 (2000px). They work in the grid but will be slightly soft on retina screens and in the full-screen viewer. Ask Donna for larger exports of these if she has them. LR-1 is also the current Weddings homepage tile.
+- Built: Commercial (60), Editorial & Lifestyle (51) and Weddings (46) pages now use the real photos (about 18-21 MB of WebP per category, lazy-loaded). Branding, Events and Food & Product still use placeholders. Reviewed desktop screenshots: order correct, layout good.
+- Re-download prompt for the missing 3: [cowork/2026-10-21-shootproof-redownload-missing.md](cowork/2026-10-21-shootproof-redownload-missing.md).
+
+**Status:** all commits since 2026-10-20 are still local only (not pushed). The reply to Donna has **not been sent yet**. Plan: send it once her real photos are live, with the link.

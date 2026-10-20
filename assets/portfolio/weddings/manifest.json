@@ -3,20 +3,20 @@
  "images": [
   {
    "file": "weddings-01",
-   "source": "placeholder-01.jpg",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-1.JPG",
    "sm": [
     800,
-    1200
+    533
    ],
    "lg": [
-    1600,
-    2400
+    864,
+    576
    ],
-   "color": "#9d9da0"
+   "color": "#b1b09a"
   },
   {
    "file": "weddings-02",
-   "source": "placeholder-02.jpg",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-2-2.jpg",
    "sm": [
     800,
     533
@@ -25,11 +25,11 @@
     1600,
     1067
    ],
-   "color": "#b7a797"
+   "color": "#433f2b"
   },
   {
    "file": "weddings-03",
-   "source": "placeholder-03.jpg",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-3-2.jpg",
    "sm": [
     800,
     533
@@ -38,11 +38,11 @@
     1600,
     1067
    ],
-   "color": "#545658"
+   "color": "#8e7f7c"
   },
   {
    "file": "weddings-04",
-   "source": "placeholder-04.jpg",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-4-2.jpg",
    "sm": [
     800,
     1200
@@ -51,7 +51,553 @@
     1600,
     2400
    ],
-   "color": "#828d83"
+   "color": "#8d8f82"
+  },
+  {
+   "file": "weddings-05",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-5-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a3a697"
+  },
+  {
+   "file": "weddings-06",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-6-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#546c84"
+  },
+  {
+   "file": "weddings-07",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-7-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#2d4321"
+  },
+  {
+   "file": "weddings-08",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-8-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a0a696"
+  },
+  {
+   "file": "weddings-09",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-9-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#4e644f"
+  },
+  {
+   "file": "weddings-10",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-10-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#606b5c"
+  },
+  {
+   "file": "weddings-11",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-11.JPG",
+   "sm": [
+    576,
+    864
+   ],
+   "lg": [
+    576,
+    864
+   ],
+   "color": "#939290"
+  },
+  {
+   "file": "weddings-12",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-12.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    864,
+    576
+   ],
+   "color": "#989b8b"
+  },
+  {
+   "file": "weddings-13",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-13-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#bbc0ba"
+  },
+  {
+   "file": "weddings-14",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-14-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#638594"
+  },
+  {
+   "file": "weddings-15",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-15-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#7d96ad"
+  },
+  {
+   "file": "weddings-16",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-16-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a59898"
+  },
+  {
+   "file": "weddings-17",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-17-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#aa9385"
+  },
+  {
+   "file": "weddings-18",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-18-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#c08379"
+  },
+  {
+   "file": "weddings-19",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-19-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#8b9162"
+  },
+  {
+   "file": "weddings-20",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-20.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1008,
+    672
+   ],
+   "color": "#a29b88"
+  },
+  {
+   "file": "weddings-21",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-21.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1008,
+    672
+   ],
+   "color": "#130f0c"
+  },
+  {
+   "file": "weddings-22",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-22.JPG",
+   "sm": [
+    672,
+    1008
+   ],
+   "lg": [
+    672,
+    1008
+   ],
+   "color": "#83776e"
+  },
+  {
+   "file": "weddings-23",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-23.JPG",
+   "sm": [
+    800,
+    706
+   ],
+   "lg": [
+    1008,
+    889
+   ],
+   "color": "#876d55"
+  },
+  {
+   "file": "weddings-24",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-24.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1066
+   ],
+   "color": "#adafa0"
+  },
+  {
+   "file": "weddings-25",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-25-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a6b2b1"
+  },
+  {
+   "file": "weddings-26",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-27-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a09b8e"
+  },
+  {
+   "file": "weddings-27",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-28-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#b5977f"
+  },
+  {
+   "file": "weddings-28",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-29.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#8c9b90"
+  },
+  {
+   "file": "weddings-29",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-30.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#b4b5ab"
+  },
+  {
+   "file": "weddings-30",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-31-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#859d77"
+  },
+  {
+   "file": "weddings-31",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-32-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a6b09a"
+  },
+  {
+   "file": "weddings-32",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-33.JPG",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#878166"
+  },
+  {
+   "file": "weddings-33",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-34-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#737f63"
+  },
+  {
+   "file": "weddings-34",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-35-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#828962"
+  },
+  {
+   "file": "weddings-35",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-36-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#727d5e"
+  },
+  {
+   "file": "weddings-36",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-37-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#92948c"
+  },
+  {
+   "file": "weddings-37",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-38-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#707f59"
+  },
+  {
+   "file": "weddings-38",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-39-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#afad86"
+  },
+  {
+   "file": "weddings-39",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-40-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#6d7549"
+  },
+  {
+   "file": "weddings-40",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-41-2.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#646e52"
+  },
+  {
+   "file": "weddings-41",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-42-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#6d8c81"
+  },
+  {
+   "file": "weddings-42",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-43.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#585155"
+  },
+  {
+   "file": "weddings-43",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-44.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#655e4b"
+  },
+  {
+   "file": "weddings-44",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-45.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#2c3023"
+  },
+  {
+   "file": "weddings-45",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-46.JPG",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#4a3a2d"
+  },
+  {
+   "file": "weddings-46",
+   "source": "Wedding Photography_by Donna_Indie Lane_LR-47-2.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#1e1e1e"
   }
  ]
 }
