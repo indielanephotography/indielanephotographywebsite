@@ -1,0 +1,83 @@
+{
+ "slug": "food-product",
+ "images": [
+  {
+   "file": "food-product-01",
+   "source": "placeholder-01.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#92a396"
+  },
+  {
+   "file": "food-product-02",
+   "source": "placeholder-02.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#94a7a8"
+  },
+  {
+   "file": "food-product-03",
+   "source": "placeholder-03.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#81b3bc"
+  },
+  {
+   "file": "food-product-04",
+   "source": "placeholder-04.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1440,
+    960
+   ],
+   "color": "#a68361"
+  },
+  {
+   "file": "food-product-05",
+   "source": "placeholder-05.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#bebdaf"
+  },
+  {
+   "file": "food-product-06",
+   "source": "placeholder-06.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#b6aa9c"
+  }
+ ]
+}

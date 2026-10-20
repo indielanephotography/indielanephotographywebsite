@@ -1,0 +1,70 @@
+{
+ "slug": "branding",
+ "images": [
+  {
+   "file": "branding-01",
+   "source": "placeholder-01.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#aea697"
+  },
+  {
+   "file": "branding-02",
+   "source": "placeholder-02.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#737461"
+  },
+  {
+   "file": "branding-03",
+   "source": "placeholder-03.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#aab2b9"
+  },
+  {
+   "file": "branding-04",
+   "source": "placeholder-04.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#c5b9b0"
+  },
+  {
+   "file": "branding-05",
+   "source": "placeholder-05.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#4d5252"
+  }
+ ]
+}

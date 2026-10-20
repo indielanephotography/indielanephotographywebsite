@@ -1,0 +1,57 @@
+{
+ "slug": "commercial",
+ "images": [
+  {
+   "file": "commercial-01",
+   "source": "placeholder-01.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#a59e94"
+  },
+  {
+   "file": "commercial-02",
+   "source": "placeholder-02.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#89938e"
+  },
+  {
+   "file": "commercial-03",
+   "source": "placeholder-03.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#777581"
+  },
+  {
+   "file": "commercial-04",
+   "source": "placeholder-04.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#c1c2a7"
+  }
+ ]
+}

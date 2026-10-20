@@ -1,0 +1,57 @@
+{
+ "slug": "weddings",
+ "images": [
+  {
+   "file": "weddings-01",
+   "source": "placeholder-01.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#9d9da0"
+  },
+  {
+   "file": "weddings-02",
+   "source": "placeholder-02.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#b7a797"
+  },
+  {
+   "file": "weddings-03",
+   "source": "placeholder-03.jpg",
+   "sm": [
+    800,
+    533
+   ],
+   "lg": [
+    1600,
+    1067
+   ],
+   "color": "#545658"
+  },
+  {
+   "file": "weddings-04",
+   "source": "placeholder-04.jpg",
+   "sm": [
+    800,
+    1200
+   ],
+   "lg": [
+    1600,
+    2400
+   ],
+   "color": "#828d83"
+  }
+ ]
+}

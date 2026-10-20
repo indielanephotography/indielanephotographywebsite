@@ -91,6 +91,8 @@ No further code changes needed on our side once this is set — the same embed s
 
 ## Phase 4 — Squarespace cancellation — executed by CoWork
 
+- [ ] **Blocker before cancelling:** move every remaining image off `images.squarespace-cdn.com` (hero slideshow, quote/FAQ photo breaks, client stories, client-gallery collage, og:image, JSON-LD image). These are hotlinks and will break once the Squarespace site is gone. Portfolio and service-card images are already self-hosted (2026-10-20).
+- [ ] Consider 301 redirects from the old Squarespace category URLs to the new `/portfolio/<slug>/` pages (keeps existing Google rankings).
 - [ ] Only after domain + email confirmed working for several days, CoWork cancels/downgrades Squarespace.
 - [ ] Re-check email delivery and MX records immediately after cancellation.
 - [ ] Keep rollback plan ready: revert GoDaddy DNS to original Squarespace values if anything breaks.
@@ -104,3 +106,31 @@ No further code changes needed on our side once this is set — the same embed s
 - CoWork retrieved the real embed code, field list, pipeline/notification behavior, and added 7 new Job Types in Studio Ninja to back the new service dropdown. Claude Code swapped the mock form in index.html for the real Studio Ninja iframe embed, removed the dead JS handler and unused CSS, and verified both embed URLs return HTTP 200 and render on a local server. Kept Studio Ninja's default unstyled look for now per instruction; theming to match the dark site is a follow-up.
 - Provided CoWork an exact color/font/corner spec (pulled from the site's CSS) to theme the embed via Studio Ninja's Style tab. CoWork applied it, but this changed the look of the form on Donna's **currently live** Squarespace site too, since it's the same shared "Contact Form" record in Studio Ninja, not a per-embed style. Reverted back to default styling. Decision: leave it unstyled until the actual domain cutover in Phase 3, to avoid touching Donna's live site before she's signed off. Also need to proactively explain this to Donna in the next client update message, so the unstyled form in the proposal doesn't read as a mistake.
 - Logged both rounds of Phase 1 work as client-facing changelog entries (v1.1 services + Studio Ninja connection, v1.2 the form-styling hold explanation) in [dashboard/indielanephotography.html](../../dashboard/indielanephotography.html)'s Changelog section, following the existing entry markup/tone already used as a template in dashboard/index.html. This is the message Donna will see on her dashboard, so v1.2 doubles as the proactive explanation of why the form still looks unstyled.
+
+### 2026-10-20
+**Client input: two emails from Donna** (15 Oct "Indie Lane Photography - x 3 Gallery of images and Wording changes", plus a follow-up a few days later):
+- She has curated her portfolio selects in one ShootProof gallery ("2026 Website - Anthony": https://indielane.shootproof.com/gallery/ce3e86c1-85c1-401a-a190-1d8a595f42f0, client password in her 15 Oct email). Email 1 covered Events, Food & Products and Weddings; email 2 added Branding, Commercial and Editorial & Lifestyle. **About 40-60 images per category.**
+- She pushed back on the earlier "fewer images is better for speed" advice: the portfolio is the main purpose of the site. She asked what research says about the best way to display a photography portfolio and pointed to her friend's site as the look she likes: https://emmawisephotography.com/personal-photography-byron-bay
+- She considered merging to 5 categories but **decided to keep all 6**, because the 6-tile services layout works and 5 wouldn't.
+- She sent new copy for the Journey timeline, "Why clients trust Donna" and the About section ("Meet Donna Nugent"). More wording changes for other sections are coming, probably mid-week.
+
+**Research: Emma Wise reference.** Showit site with a dedicated page per category: about 45 large photos in a 2-column masonry at native aspect ratio (no cropping), tight gutters, nothing else competing. Conclusion: 40-60 images is normal and fine if each category gets its **own page** (not a popup) and images are properly optimised and lazy-loaded. The homepage stays a curated taste that links into those pages. Separate pages are also an SEO win, since each one can rank for "<category> photographer Byron Bay".
+
+**Done (Claude Code):**
+- Wording: Journey section (eyebrow, new headline "Three decades, told in chapters", intro and all 6 chapters), Value Props headline and intro ("20 years of experience, a personality you can be yourself with"), and About headline changed to "Meet Donna Nugent" with her 6 new paragraphs (pull-quote and CTA kept). For consistency with her "20 years" wording, also changed the stats strip "10+ yrs" to "20+ yrs" and the FAQ "Over ten years full time" to "Over 20 years behind the camera". Flag this to Donna.
+- New portfolio architecture: each category has its own page at `/portfolio/<slug>/` (Emma-style masonry, 1/2/3 columns by screen width, Donna's order kept left to right). Pages have lazy loading, responsive 800w/1600w WebP, width/height set to prevent layout shift, a dominant-colour placeholder per photo, a full-screen viewer (arrows/keys/swipe/Esc), category switcher, prev/next category and booking CTA, plus their own SEO title, description, canonical, OG image and ImageGallery schema.
+- Homepage "View gallery" buttons now link to those pages. The old popup modal (HTML, JS, CSS) was removed.
+- Moved all inline CSS from `index.html` to `assets/css/site.css`, shared by every page.
+- Added `tools/build_portfolio.py` (see CLAUDE.md). It also points the homepage service-card covers and the "Recent work" grid at the processed images.
+- Fixed a pre-existing bug: the footer newsletter "Sign up" button threw an error because `ilToast` wasn't global.
+- Pages are currently generated from the **old placeholder photos** (4-6 per category, re-hosted locally) so nothing links to a 404. They get replaced as soon as the ShootProof selects are processed.
+- Tested locally: desktop and mobile render, no horizontal overflow at 390px, lightbox open/next/wrap/Esc and scroll lock all working.
+- Added a repo `CLAUDE.md` (project rules plus "log every session here" so context follows across devices) and a `cowork/` folder for CoWork prompts.
+
+**CoWork hand-off:** [cowork/2026-10-20-shootproof-portfolio-download.md](cowork/2026-10-20-shootproof-portfolio-download.md). Download all 6 albums at full resolution into `_incoming/<slug>/`, capture Donna's display order (`order.txt`) and the cover per album. Read-only in ShootProof.
+
+**Next:**
+- When CoWork reports back: run `python tools/build_portfolio.py`, review each page, set covers/mix in `CATEGORIES` if Donna's covers differ from image 1, commit and push.
+- Reply to Donna: research answer, 6 categories confirmed, wording done, ask her to check the "20+ yrs" consistency edits.
+- Waiting on Donna's remaining wording changes (mid-week).
+- Before Squarespace cancellation, migrate the remaining Squarespace-CDN hotlinked images (see Phase 4).
