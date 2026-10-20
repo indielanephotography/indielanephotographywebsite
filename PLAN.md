@@ -134,3 +134,14 @@ No further code changes needed on our side once this is set — the same embed s
 - Reply to Donna: research answer, 6 categories confirmed, wording done, ask her to check the "20+ yrs" consistency edits.
 - Waiting on Donna's remaining wording changes (mid-week).
 - Before Squarespace cancellation, migrate the remaining Squarespace-CDN hotlinked images (see Phase 4).
+
+### 2026-10-21
+**CoWork report on the ShootProof gallery** (read-only, nothing changed): "2026 Website - Anthony" has exactly 6 albums matching the 6 slugs. Counts: Branding 56, Commercial 60, Editorial & Lifestyle 51, Events 44, Food & Products 61 (28 Food + 33 Product, Food first), Weddings 46. **318 photos in total.**
+- Order: every album is in plain ascending filename order (…LR-1, LR-2…), so no `order.txt` is needed. The build script's natural filename sort reproduces it, including Food before Product. Gaps in numbering (for example no Wedding LR-26) are culls, not reordering. This is inferred from the client view because CoWork couldn't open the studio side.
+- Filenames are mixed-case and mixed-extension (.JPG/.jpg). The script already handles this.
+- Cover photos: ShootProof shows no filename for album covers, so the homepage tiles default to image 1 of each album. The draft reply asks Donna which photo she wants to lead each category.
+- CoWork can only drive Chrome: downloads land in Chrome's download folder as zips, and it can't unzip or write to D:.
+
+**Decision:** CoWork downloads the 6 zips to Chrome's download folder (no computer linking needed). Claude Code unzips, flattens and sorts them into `_incoming/<slug>/`, checks resolution and watermarks, then runs the build. Prompt: [cowork/2026-10-21-shootproof-download-zips.md](cowork/2026-10-21-shootproof-download-zips.md).
+
+**Status:** the 2026-10-20 commit is still local only (not pushed). The reply to Donna has **not been sent yet**. Plan: send it once her real photos are live, with the link.
