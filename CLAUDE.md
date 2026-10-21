@@ -11,6 +11,10 @@ Static site (HTML/CSS/JS, no framework) for Donna Nugent's Indie Lane Photograph
 
 At the end of any session that changes something or receives client input, append a dated entry to the PLAN.md **Session Log**. Include what Donna asked for, what was done, decisions and why, open items, and any CoWork hand-offs. Log every client email or feedback round, even small ones. Also update local Claude memory, but PLAN.md is the record that syncs between machines.
 
+## Git
+
+Always commit **and push** to `main` after making changes, without asking (Anthony's standing instruction). Pushing redeploys Donna's Vercel preview. Anthony messages Donna himself, once the work is pushed, so never contact her directly. Prepare the update text for him instead.
+
 ## CoWork hand-offs
 
 CoWork is a separate agent with browser access to Donna's accounts (ShootProof, Studio Ninja, GoDaddy, Squarespace, Vercel, GitHub). When a task needs it, write a complete, copy-pasteable prompt and save it as `cowork/YYYY-MM-DD-<task>.md`. Each prompt states the goal, exact steps, exact output locations, what not to touch, and what to report back. Never put credentials in prompts or in the repo.

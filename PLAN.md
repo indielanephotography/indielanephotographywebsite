@@ -154,4 +154,4 @@ No further code changes needed on our side once this is set — the same embed s
 - **All 6 categories are now built from Donna's real photos: 318 in total**, about 111 MB of WebP (12-21 MB per category, lazy-loaded). Homepage tiles use each album's LR-1. Reviewed: homepage services grid and the Events page.
 - Originals live in `_incoming/` on this machine only (gitignored). On another device, the committed WebP and manifests are enough (`--pages` rebuild). Reprocessing would need the originals again (ShootProof gallery expires 30 Jan 2027).
 
-**Status:** all commits since 2026-10-20 are still local only (not pushed). The reply to Donna has **not been sent yet**. Plan: send it once her real photos are live, with the link.
+**Status:** pushed to GitHub on 2026-10-21 (all of the above). From now on, always push after changes (Anthony's rule, now in CLAUDE.md). Anthony hasn't messaged Donna yet. He'll send her an update now that the work is live, then ask whether anything still needs clarifying.
