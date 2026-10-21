@@ -150,4 +150,8 @@ No further code changes needed on our side once this is set — the same embed s
 - Built: Commercial (60), Editorial & Lifestyle (51) and Weddings (46) pages now use the real photos (about 18-21 MB of WebP per category, lazy-loaded). Branding, Events and Food & Product still use placeholders. Reviewed desktop screenshots: order correct, layout good.
 - Re-download prompt for the missing 3: [cowork/2026-10-21-shootproof-redownload-missing.md](cowork/2026-10-21-shootproof-redownload-missing.md).
 
+**Download round 2 (2026-10-21):** Anthony unzipped Branding (56), Events (44) and Food & Products (61) into `assets/portfolio/`. Claude Code moved them to `_incoming/`. All are 2400px "LR" exports, sRGB, no watermarks (contact sheets checked), with no low-res outliers. Food sorts before Product as in the gallery.
+- **All 6 categories are now built from Donna's real photos: 318 in total**, about 111 MB of WebP (12-21 MB per category, lazy-loaded). Homepage tiles use each album's LR-1. Reviewed: homepage services grid and the Events page.
+- Originals live in `_incoming/` on this machine only (gitignored). On another device, the committed WebP and manifests are enough (`--pages` rebuild). Reprocessing would need the originals again (ShootProof gallery expires 30 Jan 2027).
+
 **Status:** all commits since 2026-10-20 are still local only (not pushed). The reply to Donna has **not been sent yet**. Plan: send it once her real photos are live, with the link.
